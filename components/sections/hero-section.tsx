@@ -14,9 +14,9 @@ export function HeroSection() {
             Crafting Frontend Systems that power meaningful work
           </h1>
           <p className="max-w-lg text-lg text-muted-foreground">
-            I lead the design and delivery of secure, accessible, and scalable
-            web platforms that power healthcare, and enterprise platforms with
-            accessibility, trust, and scale built in from the start.
+            From Walmart checkout to Olympic lab systems — 25+ years building
+            frontend for payments, medical devices, and civic technology where
+            reliability, compliance, and accessibility aren&apos;t nice-to-haves.
           </p>
           <div className="flex gap-4">
             <a

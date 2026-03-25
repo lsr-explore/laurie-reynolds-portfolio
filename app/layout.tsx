@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Laurie Reynolds | Senior Front-End Software Engineer",
   description:
-    "Portfolio of Laurie Reynolds — building secure, accessible, and scalable frontend systems for healthcare, payments, and enterprise platforms.",
+    "Senior Front-End Engineer with 25+ years shipping high-stakes React applications for Walmart payments, FDA-regulated medical software, and civic technology.",
 };
 
 export default function RootLayout({

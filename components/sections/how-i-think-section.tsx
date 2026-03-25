@@ -89,11 +89,11 @@ export function HowIThinkSection() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-sans text-3xl font-bold md:text-4xl">
-            How I think
+            How I Work
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Discover the principles guiding my work: accessible, secure, and
-            reliable web solutions for all users.
+            Opinions I&apos;ve earned the hard way, across regulated
+            environments, high-traffic systems, and cross-functional teams.
           </p>
         </div>
 

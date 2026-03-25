@@ -2,27 +2,27 @@ export const impactCards = [
   {
     title: "Walmart Payments",
     description:
-      "Led frontend for high volume web payments supporting millions of users.",
+      "Architected payment UI for EBT SNAP, WIC, PayPal, Affirm, and credit card flows — serving millions of daily checkouts with zero blocker accessibility bugs.",
   },
   {
-    title: "Regulated Environments",
+    title: "FDA-Regulated Medical Software",
     description:
-      "Delivered frontend systems meeting PCI, audit, and compliance standards without compromising usability or velocity.",
+      "Built 21 CFR Part 11 compliant UIs at Thermo Fisher for drug discovery workflows and Olympic-level testing collaborations at King's College London.",
   },
   {
-    title: "Technical Leadership & Mentorship",
+    title: "Accessibility at Scale",
     description:
-      "Provided structure, requirement clarity, and architectural guidance that increased team productivity and execution speed.",
+      "Introduced shift-left a11y tooling (jsx-a11y, jest-axe) across a 1,000+ developer monorepo. Trained ~50 engineers on accessible design practices.",
   },
   {
-    title: "Cross-Functional Collaboration",
+    title: "Civic Technology",
     description:
-      "Partnered closely with product, design, and compliance stakeholders to align requirements and accelerate delivery.",
+      "Volunteered with U.S. Digital Response to improve Grant Finder accessibility, and built D3.js dashboards for the City of San Jose Economics Office.",
   },
   {
-    title: "Accessible By Design",
+    title: "Performance & Reliability",
     description:
-      "Implemented WCAG-aligned standards and shift-left development across teams.",
+      "Reduced checkout load times through bundle optimization and skeleton UI. Supported on-call during peak holiday traffic for Walmart's payment systems.",
   },
 ];
 
@@ -90,27 +90,27 @@ export const companies = [
 
 export const howIThinkCards = [
   {
-    title: "Building systems people can trust",
+    title: "Ship it right, not just fast",
     description:
-      "I like the challenge of building complex systems, especially in regulated environments like payments or healthcare services, where reliability, compliance, and user trust matter deeply.",
+      "I've worked in environments where a checkout bug means lost revenue and a compliance miss means legal exposure. That taught me to treat quality as a feature, not a phase.",
     icon: "shield" as const,
   },
   {
-    title: "Accessibility and compliance by default",
+    title: "Accessibility is not a follow-up ticket",
     description:
-      "I believe strong engineering brings order to complexity. Clear requirements, thoughtful architecture and collaborative execution allow teams to move confidently, even in high-stakes, rapidly changing environments.",
+      "I'd rather catch a violation in a lint rule than discover it in a production audit. I've built the tooling, run the workshops, and shipped payment systems with zero blocker a11y bugs to prove it works.",
     icon: "accessibility" as const,
   },
   {
-    title: "Collaboration + alignment",
+    title: "Bridge the gap between teams",
     description:
-      "Throughout my career, I've worked closely with product managers, designers, compliance teams, and backend engineers to translate complex requirements into systems that are both maintainable and inclusive.",
+      "Payment flows touch product, design, security, fraud, backend, mobile, and international teams. I've learned to translate between all of them and keep everyone moving in the same direction.",
     icon: "collaboration" as const,
   },
   {
-    title: "Iterate with discipline",
+    title: "Leave it better than I found it",
     description:
-      "I embrace ongoing learning and iteration, refining processes to achieve better outcomes and foster growth.",
+      "Whether it's refactoring a test suite to remove flaky mocks, writing incident response runbooks, or mentoring junior engineers — I invest in the systems around the code, not just the code itself.",
     icon: "iterate" as const,
   },
 ];

@@ -7,12 +7,12 @@ export function ImpactSection() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-sans text-3xl font-bold md:text-4xl">
-            Impact at Scale
+            Where I&apos;ve Made an Impact
           </h2>
           <p className="mt-4 text-muted-foreground">
-            I work with teams building secure, accessible, and highly reliable
-            web systems, delivering the structure, clarity and engineering
-            discipline required to operate at scale.
+            The systems I&apos;ve built handle real stakes — payment processing
+            for millions, FDA-regulated diagnostics, and government services
+            that people depend on.
           </p>
         </div>
 

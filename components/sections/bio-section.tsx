@@ -22,40 +22,41 @@ export function BioSection() {
 
         {/* Bio text */}
         <div className="space-y-4 text-muted-foreground">
-          <p>
-            I&apos;m a senior frontend engineer focused on building secure,
-            accessible, and scalable web systems.
+          <p className="text-foreground text-lg font-medium">
+            The first time I really understood what frontend engineering means, I
+            was waking up before dawn to keep a live weather integration running
+            for Good Morning America.
           </p>
           <p>
-            For more than three decades, I&apos;ve worked across enterprise,
-            public sector, and high-volume transaction platforms, bringing
-            structure, clarity, and long-term thinking to complex engineering
-            challenges.
+            Millions of viewers. No second chances. That was early in my
+            career, but it set the tone for everything since — I build
+            interfaces for moments where failure isn&apos;t abstract.
           </p>
           <p>
-            Over the years, I&apos;ve supported systems operating in moments
-            that mattered.
+            At Thermo Fisher, I spent six years building FDA-regulated lab
+            software. When King&apos;s College London used our systems during
+            the 2012 Olympics for mass spectrometry testing, the UI I&apos;d
+            built was part of that workflow. At Siemens, I developed imaging
+            tools for the Sequoia ultrasound platform used in clinical
+            diagnostics.
           </p>
           <p>
-            Early in my career, I found myself waking before dawn to support a
-            live weather integration for Good Morning America, learning
-            firsthand what reliability means when millions of viewers are
-            watching.
+            Then I moved to Walmart, where I led frontend engineering for
+            payment systems — EBT SNAP, WIC, PayPal, Affirm, credit cards —
+            processing millions of transactions daily. I introduced
+            accessibility tooling across a 1,000+ developer monorepo, ran
+            workshops for 50 engineers, and shipped payment flows with zero
+            blocker a11y bugs.
           </p>
           <p>
-            At Thermo Fisher, I supported King&apos;s College London during the
-            2012 Olympics as they onboarded mass spectrometry systems powered by
-            our software.
+            Most recently, I volunteered with U.S. Digital Response to improve
+            accessibility in government grant-finding tools, and I&apos;ve been
+            exploring AI-assisted accessibility guidance through RAG prototypes.
           </p>
           <p>
-            At Walmart Global Tech, I led the web integration of a pilot program
-            to support using Women Infant and Children (WIC) benefit card to pay
-            for goods online.
-          </p>
-          <p>
-            These experiences shaped how I approach engineering: calm under
-            pressure, structured in complexity, and deeply aware that real people
-            depend on the systems we build.
+            Across all of it — media, medical devices, retail, civic tech — the
+            thread is the same: I&apos;m drawn to work where the people using
+            the software really need it to work.
           </p>
         </div>
       </div>
