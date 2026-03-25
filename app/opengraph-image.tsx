@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
-
-export const runtime = "edge";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export const alt =
   "Laurie Reynolds — Senior Front-End Software Engineer";
@@ -10,7 +10,12 @@ export const size = {
 };
 export const contentType = "image/png";
 
-export default function Image() {
+export default async function Image() {
+  const logoData = await readFile(
+    join(process.cwd(), "public", "laurie-reynolds-logo.png")
+  );
+  const logoSrc = `data:image/png;base64,${logoData.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -35,6 +40,14 @@ export default function Image() {
             height: "6px",
             background: "linear-gradient(to right, #3d5a80, #2a6b5a, #3d5a80)",
           }}
+        />
+
+        {/* Logo */}
+        <img
+          src={logoSrc}
+          width={110}
+          height={60}
+          style={{ marginBottom: "24px" }}
         />
 
         {/* Name */}
