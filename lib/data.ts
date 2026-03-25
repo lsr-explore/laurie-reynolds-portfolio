@@ -104,7 +104,7 @@ export const howIThinkCards = [
   {
     title: "Bridge the gap between teams",
     description:
-      "Payment flows touch product, design, security, fraud, backend, mobile, and international teams. I've learned to translate between all of them and keep everyone moving in the same direction.",
+      "Payment flows touch product, design, security, fraud, backend, mobile, and international teams. I love helping everyone understand the full workflow, surface the factors that matter, and build shared alignment.",
     icon: "collaboration" as const,
   },
   {
