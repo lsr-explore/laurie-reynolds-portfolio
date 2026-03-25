@@ -1,6 +1,4 @@
 import { ImageResponse } from "next/og";
-import { readFile } from "node:fs/promises";
-import { join } from "node:path";
 
 export const alt =
   "Laurie Reynolds — Senior Front-End Software Engineer";
@@ -10,12 +8,7 @@ export const size = {
 };
 export const contentType = "image/png";
 
-export default async function Image() {
-  const logoData = await readFile(
-    join(process.cwd(), "public", "laurie-reynolds-logo.png")
-  );
-  const logoSrc = `data:image/png;base64,${logoData.toString("base64")}`;
-
+export default function Image() {
   return new ImageResponse(
     (
       <div
@@ -42,30 +35,17 @@ export default async function Image() {
           }}
         />
 
-        {/* Logo + Name */}
+        {/* Name */}
         <div
           style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "20px",
+            fontSize: 64,
+            fontWeight: 300,
+            color: "#1a1a1a",
+            lineHeight: 1.1,
             marginBottom: "16px",
           }}
         >
-          <img
-            src={logoSrc}
-            width={70}
-            height={70}
-          />
-          <div
-            style={{
-              fontSize: 64,
-              fontWeight: 300,
-              color: "#1a1a1a",
-              lineHeight: 1.1,
-            }}
-          >
-            Laurie Reynolds
-          </div>
+          Laurie Reynolds
         </div>
 
         {/* Title */}
