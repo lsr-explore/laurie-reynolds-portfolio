@@ -28,3 +28,19 @@ about
 - public/pexels-ella-olsson-572949-3026809.jpg
 - public/pexels-octoptimist-13787635.jpg
 - public/pexels-spolyakov-13217103.jpg
+
+---
+
+## Planned Additions
+
+### Work Page Stories
+- **Siemens Sequoia dual imaging** — Stubbed out, needs Challenge/What I Did/Outcome content
+- **A11y Road (Accessible Community)** — Add case study once the site is live
+- **WCAG RAG application** — Write up notes on building a WCAG RAG with different tools
+
+### New Projects
+- **Photo critique agent** — AI agent that analyzes uploaded photos for composition feedback (rule of thirds, leading lines, color balance). Uses vision API. Ties to photography hobby and aperture logo.
+- **Portrait landmark comparison tool** — Upload a portrait drawing and a reference photo, detect facial landmarks on both (MediaPipe Face Mesh, browser-based), overlay to show proportion differences. No AI needed — pure frontend/canvas/visualization.
+
+### Other
+- Set up custom domain (lauriereynolds.dev?) — update metadataBase in app/layout.tsx when ready
