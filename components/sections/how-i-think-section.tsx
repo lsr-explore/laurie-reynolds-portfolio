@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { howIThinkCards } from "@/lib/data";
 
 function CardIcon({ icon }: { icon: string }) {
-  const iconClass = "h-8 w-8 text-primary";
+  const iconClass = "h-10 w-10 text-accent";
 
   switch (icon) {
     case "shield":
@@ -99,7 +99,7 @@ export function HowIThinkSection() {
 
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {howIThinkCards.map((card) => (
-            <Card key={card.title}>
+            <Card key={card.title} className="border-t-4 border-t-accent transition-shadow hover:shadow-md">
               <CardHeader>
                 <CardIcon icon={card.icon} />
                 <CardTitle className="text-base">{card.title}</CardTitle>

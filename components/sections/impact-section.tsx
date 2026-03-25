@@ -19,7 +19,10 @@ export function ImpactSection() {
         {/* Top row: 3 cards */}
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           {impactCards.slice(0, 3).map((card) => (
-            <Card key={card.title}>
+            <Card
+              key={card.title}
+              className="border-l-4 border-l-primary transition-shadow hover:shadow-md"
+            >
               <CardHeader>
                 <CardTitle className="text-lg">{card.title}</CardTitle>
               </CardHeader>
@@ -36,7 +39,10 @@ export function ImpactSection() {
         <div className="mt-6 flex justify-center">
           <div className="grid w-full max-w-2xl grid-cols-1 gap-6 md:grid-cols-2">
             {impactCards.slice(3).map((card) => (
-              <Card key={card.title}>
+              <Card
+                key={card.title}
+                className="border-l-4 border-l-primary transition-shadow hover:shadow-md"
+              >
                 <CardHeader>
                   <CardTitle className="text-lg">{card.title}</CardTitle>
                 </CardHeader>

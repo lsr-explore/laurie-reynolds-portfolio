@@ -244,6 +244,71 @@ export default function ResumePage() {
         ))}
       </div>
 
+      {/* Volunteer */}
+      <Separator className="my-12" />
+      <h2 className="mb-6 text-2xl font-bold">Volunteer</h2>
+      <div className="space-y-4">
+        <Card>
+          <CardHeader>
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <CardTitle className="text-base">Volunteer</CardTitle>
+                <a
+                  href="https://accessiblecommunity.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-primary hover:underline"
+                >
+                  Accessible Community
+                </a>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                October 2025 — Present
+              </p>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-muted-foreground">
+              Evaluating small nonprofit organizations&apos; websites and
+              improving internal tools to support accessibility education and
+              outreach.
+            </p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
+              <div>
+                <CardTitle className="text-base">Website Editor</CardTitle>
+                <a
+                  href="https://cameraclublwv.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm font-medium text-primary hover:underline"
+                >
+                  Camera Club of Laguna Woods Village
+                </a>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                September 2024 — Present
+              </p>
+            </div>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            <p className="text-sm text-muted-foreground">
+              Updating classes and workshops on the website.
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {["WordPress", "Elegant Themes Divi", "Event Calendar", "Constant Contact"].map((t) => (
+                <Badge key={t} variant="secondary" className="text-xs">
+                  {t}
+                </Badge>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
       {/* Education */}
       <Separator className="my-12" />
       <h2 className="mb-6 text-2xl font-bold">Education</h2>

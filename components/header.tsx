@@ -10,8 +10,8 @@ export function Header() {
           <Image
             src="/laurie-reynolds-logo.png"
             alt=""
-            width={32}
-            height={32}
+            width={70}
+            height={70}
             style={{ height: "auto" }}
             priority
           />

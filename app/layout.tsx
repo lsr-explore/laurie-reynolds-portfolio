@@ -32,6 +32,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <div className="h-1 bg-gradient-to-r from-primary via-accent to-primary" aria-hidden="true" />
         <SkipLink />
         <Header />
         <main id="main-content" className="flex-1">

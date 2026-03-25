@@ -16,7 +16,8 @@ export function HeroSection() {
           <p className="max-w-lg text-lg text-muted-foreground">
             From Walmart checkout to Olympic lab systems — 25+ years building
             frontend for payments, medical devices, and civic technology where
-            reliability, compliance, and accessibility aren&apos;t nice-to-haves.
+            reliability, compliance, and accessibility are foundational to
+            earning users&apos; trust.
           </p>
           <div className="flex gap-4">
             <a
