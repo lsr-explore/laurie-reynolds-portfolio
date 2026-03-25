@@ -16,9 +16,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://laurie-reynolds-portfolio.vercel.app"),
   title: "Laurie Reynolds | Senior Front-End Software Engineer",
   description:
     "Senior Front-End Engineer with 25+ years shipping high-stakes React applications for Walmart payments, FDA-regulated medical software, and civic technology.",
+  openGraph: {
+    title: "Laurie Reynolds | Senior Front-End Software Engineer",
+    description:
+      "Crafting Frontend Systems that power meaningful work — payments, medical software, accessibility, and civic technology.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Laurie Reynolds | Senior Front-End Software Engineer",
+    description:
+      "Crafting Frontend Systems that power meaningful work — payments, medical software, accessibility, and civic technology.",
+  },
 };
 
 export default function RootLayout({
