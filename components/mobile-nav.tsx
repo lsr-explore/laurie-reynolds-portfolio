@@ -75,6 +75,15 @@ export function MobileNav() {
               </Link>
             </li>
             <li>
+              <Link
+                href="/resume"
+                onClick={() => setOpen(false)}
+                className="text-sm font-medium text-foreground transition-colors hover:text-primary"
+              >
+                Resume
+              </Link>
+            </li>
+            <li>
               <a
                 href="https://www.linkedin.com/in/lauriesreynolds/"
                 target="_blank"

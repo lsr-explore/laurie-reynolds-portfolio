@@ -6,7 +6,7 @@ export function ImpactSection() {
     <section id="impact" className="py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-serif text-3xl font-bold md:text-4xl">
+          <h2 className="font-sans text-3xl font-bold md:text-4xl">
             Impact at Scale
           </h2>
           <p className="mt-4 text-muted-foreground">

@@ -6,15 +6,18 @@ export function Header() {
   return (
     <header className="relative border-b border-border">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" aria-label="Laurie Reynolds — home">
+        <Link href="/" className="flex items-center gap-3" aria-label="Laurie Reynolds — home">
           <Image
             src="/laurie-reynolds-logo.png"
             alt=""
-            width={160}
-            height={40}
+            width={32}
+            height={32}
             style={{ height: "auto" }}
             priority
           />
+          <span className="text-sm font-semibold text-foreground">
+            Laurie Reynolds
+          </span>
         </Link>
 
         {/* Desktop nav */}
@@ -34,6 +37,14 @@ export function Header() {
                 className="text-sm font-medium text-foreground transition-colors hover:text-primary"
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/resume"
+                className="text-sm font-medium text-foreground transition-colors hover:text-primary"
+              >
+                Resume
               </Link>
             </li>
             <li>
