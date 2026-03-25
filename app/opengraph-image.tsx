@@ -42,25 +42,30 @@ export default async function Image() {
           }}
         />
 
-        {/* Logo */}
-        <img
-          src={logoSrc}
-          width={110}
-          height={60}
-          style={{ marginBottom: "24px" }}
-        />
-
-        {/* Name */}
+        {/* Logo + Name */}
         <div
           style={{
-            fontSize: 64,
-            fontWeight: 300,
-            color: "#1a1a1a",
-            lineHeight: 1.1,
+            display: "flex",
+            alignItems: "center",
+            gap: "20px",
             marginBottom: "16px",
           }}
         >
-          Laurie Reynolds
+          <img
+            src={logoSrc}
+            width={70}
+            height={70}
+          />
+          <div
+            style={{
+              fontSize: 64,
+              fontWeight: 300,
+              color: "#1a1a1a",
+              lineHeight: 1.1,
+            }}
+          >
+            Laurie Reynolds
+          </div>
         </div>
 
         {/* Title */}
