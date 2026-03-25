@@ -41,7 +41,7 @@ const workHighlights = [
 export default function WorkPage() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-      <h1 className="mb-4 text-center font-sans text-4xl font-bold md:text-5xl">
+      <h1 className="mb-4 text-center font-sans text-4xl font-light md:text-5xl">
         Work
       </h1>
       <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">

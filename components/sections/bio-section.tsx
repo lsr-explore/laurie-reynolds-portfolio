@@ -3,7 +3,7 @@ import Image from "next/image";
 export function BioSection() {
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-      <h1 className="mb-12 text-center font-sans text-4xl font-bold md:text-5xl">
+      <h1 className="mb-12 text-center font-sans text-4xl font-light md:text-5xl">
         About
       </h1>
 

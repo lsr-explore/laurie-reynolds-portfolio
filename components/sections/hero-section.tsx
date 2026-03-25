@@ -10,7 +10,7 @@ export function HeroSection() {
       <div className="flex flex-col gap-12 lg:flex-row lg:items-center lg:gap-16">
         {/* Text */}
         <div className="flex-1 space-y-6">
-          <h1 className="font-sans text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl">
+          <h1 className="font-sans text-4xl font-light leading-tight tracking-tight md:text-5xl lg:text-6xl">
             Crafting Frontend Systems that power meaningful work
           </h1>
           <p className="max-w-lg text-lg text-muted-foreground">
