@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Laurie Reynolds | Senior Front-End Software Engineer",
     description:
-      "Crafting Frontend Systems that power meaningful work — payments, medical software, accessibility, and civic technology.",
+      "Building frontend systems for complex, high-impact applications — payments, medical software, accessibility, and civic technology.",
     type: "website",
     locale: "en_US",
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Laurie Reynolds | Senior Front-End Software Engineer",
     description:
-      "Crafting Frontend Systems that power meaningful work — payments, medical software, accessibility, and civic technology.",
+      "Building frontend systems for complex, high-impact applications — payments, medical software, accessibility, and civic technology.",
   },
 };
 

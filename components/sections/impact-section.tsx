@@ -10,9 +10,9 @@ export function ImpactSection() {
             Where I&apos;ve Made an Impact
           </h2>
           <p className="mt-4 text-muted-foreground">
-            The systems I&apos;ve built handle real stakes — payment processing
-            for millions, FDA-regulated diagnostics, and government services
-            that people depend on.
+            My experience includes high-volume payment systems, FDA-regulated
+            scientific software, accessible government applications, and the
+            frontend practices that help teams maintain them.
           </p>
         </div>
 

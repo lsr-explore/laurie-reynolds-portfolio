@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { BioSection } from "@/components/sections/bio-section";
 import { HowIThinkSection } from "@/components/sections/how-i-think-section";
 import { InspirationSection } from "@/components/sections/inspiration-section";
+import { WhatIBring } from "@/components/sections/what-i-bring";
 
 export const metadata: Metadata = {
   title: "About | Laurie Reynolds",
@@ -14,6 +15,7 @@ export default function AboutPage() {
     <>
       <BioSection />
       <HowIThinkSection />
+      <WhatIBring/>
       <InspirationSection />
     </>
   );

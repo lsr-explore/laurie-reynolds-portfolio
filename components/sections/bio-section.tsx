@@ -23,41 +23,33 @@ export function BioSection() {
         {/* Bio text */}
         <div className="space-y-4 text-muted-foreground">
           <p className="text-foreground text-lg font-medium">
-            The first time I really understood what frontend engineering means, I
-            was waking up before dawn to keep a live weather integration running
-            for Good Morning America.
+            I&apos;ve spent my career building software in environments where accuracy,
+            usability, and reliability matter.  Early in my career, that included supporting
+            a live weather integration used during ABC&apos;s Good Morning America broadcasts.
+            Later, I moved into medical imaging, regulated laboratory software, high-volume 
+            payments, and civic technology.
           </p>
           <p>
-            Millions of viewers. No second chances. That was early in my
-            career, but it set the tone for everything since — I build
-            interfaces for moments where failure isn&apos;t abstract.
+            At Thermo Fisher, I led development of laboratory applications used 
+            in regulated scientific workflows.  At Siements, I built imaging and
+            visualization software for the Sequoia ultrasound platform.  These roles 
+            taught me how much thoughtful interface design matters when users are 
+            working with complex information.
           </p>
           <p>
-            At Thermo Fisher, I spent six years building FDA-regulated lab
-            software. When King&apos;s College London used our systems during
-            the 2012 Olympics for mass spectrometry testing, the UI I&apos;d
-            built was part of that workflow. At Siemens, I developed imaging
-            tools for the Sequoia ultrasound platform used in clinical
-            diagnostics.
+            At Walmart, I returned fully to web application development and
+            eventually led frontend engineering for payment experiences including 
+            EBT SNAP, WIC, PayPal, Affirm, and credit cards.  I particularly
+            enjoyed the work that crossed team boundaries: turning complicated 
+            requirements into reusable components, improving accessibility and
+            testing practices, and helping teams understand the complete customer journey.
           </p>
           <p>
-            Then I moved to Walmart, where I led frontend engineering for
-            payment systems — EBT SNAP, WIC, PayPal, Affirm, credit cards —
-            processing millions of transactions daily. I introduced
-            accessibility tooling across a 1,000+ developer monorepo, ran
-            workshops for 50 engineers, and shipped payment flows with zero
-            blocker a11y bugs.
+            The common thread in my work is that I enjoy making complicated 
+            systems easier for people to use and easier for engineering teams 
+            to maintain.
           </p>
-          <p>
-            Most recently, I volunteered with U.S. Digital Response to improve
-            accessibility in government grant-finding tools, and I&apos;ve been
-            exploring AI-assisted accessibility guidance through RAG prototypes.
-          </p>
-          <p>
-            Across all of it — media, medical devices, retail, civic tech — the
-            thread is the same: I&apos;m drawn to work where the people using
-            the software really need it to work.
-          </p>
+        
         </div>
       </div>
     </section>

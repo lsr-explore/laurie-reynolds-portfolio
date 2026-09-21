@@ -2,78 +2,90 @@ export const impactCards = [
   {
     title: "Walmart Payments",
     description:
-      "Architected payment UI for EBT SNAP, WIC, PayPal, Affirm, and credit card flows — serving millions of daily checkouts with zero blocker accessibility bugs.",
+      "Led frontend development for Walmart.com payment experiences including EBT SNAP, WIC, PayPal, Affirm, and credit cards.  Built reusable components used across Checkout, Walmart+, Pharmacy, Cart, Account, and Subscriptions.",
   },
   {
-    title: "FDA-Regulated Medical Software",
+    title: "Regulated Scientific and Medical Software",
     description:
-      "Built 21 CFR Part 11 compliant UIs at Thermo Fisher for drug discovery workflows and Olympic-level testing collaborations at King's College London.",
+      "Built laboratory and medical-imaging applications at Thermo Fisher and Siements including software developed under FDA 21 CFR Part 11 requirements.",
   },
   {
     title: "Accessibility at Scale",
     description:
-      "Introduced shift-left a11y tooling (jsx-a11y, jest-axe) across a 1,000+ developer monorepo. Trained ~50 engineers on accessible design practices.",
+      "Introduced automated accessibility checks in a frontend monorepo used by more than 1,000 developers.  Facilitated an accessibility workshop for approximately 50 engineers, designers, and product partners.",
   },
   {
     title: "Civic Technology",
     description:
-      "Volunteered with U.S. Digital Response to improve Grant Finder accessibility, and built D3.js dashboards for the City of San Jose Economics Office.",
+      "Improved keyboard and screen-reader accessibility in government grant applications with U.S. Digital Response, and previously built data visualizations for the City of San Jose, CA.",
   },
   {
     title: "Performance & Reliability",
     description:
-      "Reduced checkout load times through bundle optimization and skeleton UI. Supported on-call during peak holiday traffic for Walmart's payment systems.",
+      "Improved checkout performance through bundle optimization, lazy loading, and skeleton UI. Supported production payment systems during high-traffic holiday perios.",
   },
 ];
 
 export const skillCategories = [
   {
-    label: "Languages & Frameworks",
+    label: "Frontend",
     skills: [
-      "JavaScript (ES6+)",
       "TypeScript",
+      "JavaScript (ES6+)",
       "React",
-      "Node.js",
-      "Vue",
       "Next.js",
+      "Vue",
       "GraphQL",
-      "Python",
       "Tailwind CSS",
       "D3.js",
-      "Redux",
-      "SSR",
     ],
   },
   {
-    label: "Testing & Tooling",
+    label: "Architecture",
     skills: [
+      "Design systems",
+      "reusable components",
+      "server rendering",
+      "performance"
+    ]
+  },
+  {
+    label: "Quality",
+    skills: [
+      "Vitest",
       "Jest",
-      "TestCafe",
+      "Playwright",
       "React Testing Library",
       "Mock Service Worker",
-      "axe DevTools",
-      "eslint-plugin-jsx-a11y",
     ],
   },
   {
-    label: "DevOps & Deployment",
-    skills: ["Docker", "CI/CD", "Vercel", "Splunk", "PostgreSQL", "MSSQL", "MySQL"],
-  },
-  {
-    label: "AI & Data Tools",
-    skills: ["OpenAI API", "Hugging Face", "Mermaid.js", "D3.js"],
-  },
-  {
-    label: "Other",
+    label: "Accessibility",
     skills: [
-      "Accessibility (a11y)",
-      "Performance Optimization",
-      "PCI DSS Compliance",
-      "Design Systems",
-      "Figma",
-      "Agile",
-      "Scrum",
-    ],
+      "WCAG",
+      "ARIA",
+      "axe DevTools",
+      "eslint-plugin-jsx-a11y"
+    ]
+  },
+  {
+    label: "Platform & operations",
+    skills: [
+      "Node",
+      "CI/CD", 
+      "Docker", 
+      "Vercel", 
+      "Splunk"
+    ]
+  },
+  {
+    label: "Applied AI",
+    skills: [
+      "OpenAI API", 
+      "RAG",
+      "structured retrieval",
+      "AI evaluation"
+    ]
   },
 ];
 
@@ -90,30 +102,39 @@ export const companies = [
 
 export const howIThinkCards = [
   {
-    title: "Ship it right, not just fast",
+    title: "Build quality into the work",
     description:
       "I've worked in environments where a checkout bug means lost revenue and a compliance miss means legal exposure. That taught me to treat quality as a feature, not a phase.",
     icon: "shield" as const,
   },
   {
-    title: "Accessibility is not a follow-up ticket",
+    title: "Include accessibility from the beginning",
     description:
       "I'd rather catch a violation in a lint rule than discover it in a production audit. I've built the tooling, run the workshops, and shipped payment systems with zero blocker a11y bugs to prove it works.",
     icon: "accessibility" as const,
   },
   {
-    title: "Bridge the gap between teams",
+    title: "Understand the complete workflow",
     description:
-      "Payment flows touch product, design, security, fraud, backend, mobile, and international teams. I love helping everyone understand the full workflow, surface the factors that matter, and build shared alignment.",
+      "Payment flows touch product, design, security, fraud, backend, mobile, and international teams. I'm good at helping teams understand the full workflow, identify the factors that matter, and reach a shared technical direction.",
     icon: "collaboration" as const,
   },
   {
-    title: "Leave it better than I found it",
+    title: "Improve the systems around the code",
     description:
       "Whether it's refactoring a test suite to remove flaky mocks, writing incident response runbooks, or mentoring junior engineers — I invest in the systems around the code, not just the code itself.",
     icon: "iterate" as const,
   },
 ];
+
+export const whatIBring = [
+  "Hands-on React and TypeScript development on large, long-lived web applications",
+  "Frontend architecture designed to reduce duplication across products and workflows",
+  "Accessibility incorporated into design, implementation, and automated tests",
+  "Experience translating payment, regulatory, and security rules into UIs",
+  "Cross-functional collaboration with product, design, backend, and platform teams",
+  "A practical approach to mentoring, documentation, testing, and operational health"
+]
 
 export const inspirationImages = [
   {
