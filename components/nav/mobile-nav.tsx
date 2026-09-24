@@ -2,8 +2,9 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+import type { StoryLink } from './types';
 
-export function MobileNav() {
+export function MobileNav({ stories }: { stories: StoryLink[] }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -58,12 +59,25 @@ export function MobileNav() {
           <ul className="flex flex-col gap-4">
             <li>
               <Link
-                href="/work"
+                href="/#work"
                 onClick={() => setOpen(false)}
                 className="text-sm font-medium text-foreground transition-colors hover:text-primary"
               >
                 Work
               </Link>
+              <ul className="mt-3 flex flex-col gap-3 border-l border-border pl-4">
+                {stories.map((story) => (
+                  <li key={story.slug}>
+                    <Link
+                      href={`/work/${story.slug}`}
+                      onClick={() => setOpen(false)}
+                      className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                    >
+                      {story.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </li>
             <li>
               <Link

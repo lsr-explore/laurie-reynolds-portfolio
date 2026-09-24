@@ -25,7 +25,7 @@ export function HeroSection() {
             and delivery.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="/work" className={cn(buttonVariants({ size: 'lg' }))}>
+            <Link href="/#work" className={cn(buttonVariants({ size: 'lg' }))}>
               View my work
             </Link>
             <a
