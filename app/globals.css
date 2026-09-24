@@ -93,3 +93,63 @@
     @apply font-sans scroll-smooth;
   }
 }
+
+/* Shared page edge: slightly inset from the header's 1.5rem padding. */
+@layer components {
+  .page-container {
+    @apply mx-auto w-full max-w-6xl px-8 md:px-10;
+  }
+}
+
+/* Story printouts use physical page margins instead of the screen reading column. */
+@page story {
+  margin: 0.75in 0.5in;
+}
+
+@media print {
+  body:has(.story-print) {
+    page: story;
+    display: block;
+    background: white;
+  }
+
+  body:has(.story-print) > header,
+  body:has(.story-print) > footer,
+  body:has(.story-print) > a,
+  body:has(.story-print) > div[aria-hidden="true"],
+  .story-print > a,
+  .story-print button {
+    display: none;
+  }
+
+  .story-print {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .story-print > header {
+    margin-top: 0;
+  }
+
+  .story-print > section {
+    margin-top: 20pt;
+  }
+
+  .story-print > [data-slot="separator"] {
+    margin-block: 20pt;
+  }
+
+  .story-print h1,
+  .story-print h2,
+  .story-print h3 {
+    break-after: avoid;
+  }
+
+  .story-print p,
+  .story-print li {
+    orphans: 3;
+    widows: 3;
+  }
+}

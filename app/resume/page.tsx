@@ -194,7 +194,7 @@ const earlierExperience = [
 
 export default function ResumePage() {
   return (
-    <section className="mx-auto max-w-4xl px-6 py-16 md:py-24">
+    <section className="page-container py-16 md:py-24">
       <div className="mb-12 flex flex-col items-center gap-4 text-center sm:flex-row sm:justify-between sm:text-left">
         <div>
           <h1 className="text-4xl font-light md:text-5xl">Resume</h1>

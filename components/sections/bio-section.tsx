@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function BioSection() {
   return (
-    <section className="mx-auto max-w-6xl px-6">
+    <section className="page-container">
       <h1 className="mb-8 md:mb-10 text-center font-sans text-4xl font-light md:text-5xl">
         About
       </h1>

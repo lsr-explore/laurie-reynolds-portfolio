@@ -49,7 +49,7 @@ export default async function StoryPage({
   }
 
   return (
-    <article className="mx-auto max-w-3xl px-6 py-16 md:py-24">
+    <article className="story-print page-container py-16 md:py-24">
       <Link
         href="/work"
         className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"

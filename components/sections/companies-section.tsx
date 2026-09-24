@@ -4,7 +4,7 @@ import { companies } from "@/lib/data";
 export function CompaniesSection() {
   return (
     <section>
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="page-container">
         <h2 className="text-center font-sans text-3xl font-light md:text-4xl">
           Organizations I&apos;ve Worked With
         </h2>

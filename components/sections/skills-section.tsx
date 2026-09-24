@@ -5,7 +5,7 @@ import { skillCategories, skillLogos } from "@/lib/data";
 export function SkillsSection() {
   return (
     <section>
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="page-container">
         <h2 className="text-center font-sans text-3xl font-light md:text-4xl">
           Skills
         </h2>

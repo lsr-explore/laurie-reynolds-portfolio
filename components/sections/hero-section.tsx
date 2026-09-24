@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 export function HeroSection() {
   return (
-    <section className="mx-auto max-w-6xl px-6">
+    <section className="page-container">
       <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-10 lg:gap-16">
         {/* Text */}
         <div className="min-w-0 space-y-6">

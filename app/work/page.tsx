@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function WorkPage() {
   return (
-    <section className="mx-auto max-w-4xl px-6 py-16 md:py-24">
+    <section className="page-container py-16 md:py-24">
       <h1 className="mb-4 text-center font-sans text-4xl font-light md:text-5xl">
         Work
       </h1>

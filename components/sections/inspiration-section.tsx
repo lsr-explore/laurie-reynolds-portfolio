@@ -4,7 +4,7 @@ import { inspirationImages } from "@/lib/data";
 export function InspirationSection() {
   return (
     <section>
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="page-container">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-sans text-3xl font-light md:text-4xl">
             What keeps me inspired

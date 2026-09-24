@@ -4,7 +4,7 @@ import { impactCards } from "@/lib/data";
 export function ImpactSection() {
   return (
     <section id="impact">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="page-container">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-sans text-3xl font-light md:text-4xl">
             Where I&apos;ve Made an Impact
