@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Laurie Reynolds | Senior Front-End Software Engineer",
     description:
-      "Building frontend systems for complex, high-impact applications — payments, medical software, accessibility, and civic technology.",
+      "Building front-end systems for complex, high-impact applications — payments, medical software, accessibility, and civic technology.",
     type: "website",
     locale: "en_US",
   },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Laurie Reynolds | Senior Front-End Software Engineer",
     description:
-      "Building frontend systems for complex, high-impact applications — payments, medical software, accessibility, and civic technology.",
+      "Building front-end systems for complex, high-impact applications — payments, medical software, accessibility, and civic technology.",
   },
 };
 
@@ -44,6 +44,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
@@ -54,7 +55,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-        <Analytics />
+        <Analytics debug={false} />
       </body>
     </html>
   );

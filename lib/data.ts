@@ -2,7 +2,7 @@ export const impactCards = [
   {
     title: "Commerce and Payments",
     description:
-      "Led frontend development for Walmart.com payment experiences including EBT SNAP, WIC, PayPal, Affirm, and credit cards.",
+      "Led front-end development for Walmart.com payment experiences including EBT SNAP, WIC, PayPal, Affirm, and credit cards.",
   },
   {
     title: "Regulated Scientific and Medical Software",
@@ -41,7 +41,7 @@ export const skillLogos: Readonly<Record<string, string>> = {
 
 export const skillCategories = [
   {
-    label: "Frontend",
+    label: "Front-End",
     skills: [
       "TypeScript",
       "JavaScript (ES6+)",
@@ -172,7 +172,7 @@ export const howIThinkCards = [
   {
     title: "Understand the complete workflow",
     description:
-      "I look beyond the interface to understand the business rules, data flow, system dependencies, and operational constraints behind it. That broader view helps me make frontend decisions that work across the whole system.",
+      "I look beyond the interface to understand the business rules, data flow, system dependencies, and operational constraints behind it. That broader view helps me make front-end decisions that work across the whole system.",
     icon: "workflow" as const,
   },
   {

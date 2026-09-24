@@ -12,15 +12,15 @@ export function HeroSection() {
         {/* Text */}
         <div className="min-w-0 space-y-6">
           <h1 className="font-sans text-4xl font-light leading-tight tracking-tight md:text-4xl lg:text-5xl">
-            Building frontend systems for complex, high-impact applications
+            Building front-end systems for complex, high-impact applications
           </h1>
           <p className="max-w-lg text-lg text-muted-foreground">
-            I&apos;m a Senior Frontend Engineer with experience building payment systems,
+            I&apos;m a Senior Front-End Engineer with experience building payment systems,
             regulated medical software, and civic technology. My work emphasizes
-            accessible interfaces, reliable systems, and reusable frontend architecture.
+            accessible interfaces, reliable systems, and reusable front-end architecture.
           </p>
           <p>
-            I&apos;m currently interested in senior frontend and frontend platform roles
+            I&apos;m currently interested in senior front-end and front-end platform roles
             where I can remain hands-on while helping teams improve architecture,
             accessibility, testing, and delivery.
           </p>

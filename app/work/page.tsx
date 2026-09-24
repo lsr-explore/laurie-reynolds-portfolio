@@ -7,7 +7,7 @@ import { stories } from "@/lib/stories";
 export const metadata: Metadata = {
   title: "Work | Laurie Reynolds",
   description:
-    "Selected projects and case studies from Laurie Reynolds — frontend systems for payments, healthcare, and medical imaging.",
+    "Selected projects and case studies from Laurie Reynolds — front-end systems for payments, healthcare, and medical imaging.",
 };
 
 export default function WorkPage() {
@@ -17,7 +17,7 @@ export default function WorkPage() {
         Work
       </h1>
       <p className="mx-auto mb-12 max-w-2xl text-center text-muted-foreground">
-        A closer look at projects where I shaped the frontend architecture,
+        A closer look at projects where I shaped the front-end architecture,
         solved hard problems, and delivered systems people depend on.
       </p>
 

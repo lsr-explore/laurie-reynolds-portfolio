@@ -38,14 +38,14 @@ export function BioSection() {
           </p>
           <p>
             At Walmart, I returned fully to web application development and
-            eventually led frontend engineering for payment experiences including 
+            eventually led front-end engineering for payment experiences including
             EBT SNAP, WIC, PayPal, Affirm, and credit cards.  I particularly
             enjoyed the work that crossed team boundaries: turning complicated 
             requirements into reusable components, improving accessibility and
             testing practices, and helping teams understand the complete customer journey.
           </p>
           <p>
-            Across these roles, I&apos;ve brought hands-on frontend engineering,
+            Across these roles, I&apos;ve brought hands-on front-end engineering,
             systems thinking, and a practical approach to making complex software
             easier for people to use and teams to maintain.
           </p>

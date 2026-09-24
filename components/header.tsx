@@ -10,9 +10,10 @@ export function Header() {
           <Image
             src="/laurie-reynolds-logo.png"
             alt=""
-            width={70}
-            height={70}
-            style={{ height: "auto" }}
+            width={1408}
+            height={768}
+            sizes="70px"
+            className="h-auto w-[70px] shrink-0"
             priority
           />
           <span className="text-sm font-semibold text-foreground">

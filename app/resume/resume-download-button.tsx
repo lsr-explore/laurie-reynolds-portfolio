@@ -7,8 +7,8 @@ export function ResumeDownloadButton() {
     <Button
       onClick={() => {
         const link = document.createElement("a");
-        link.href = "/laurie-reynolds-resume.pdf";
-        link.download = "Laurie Reynolds - Resume.pdf";
+        link.href = "/Laurie_Reynolds_2026_Senior_Front_End_Engineer_Resume.pdf";
+        link.download = "Laurie_Reynolds_2026_Senior_Front_End_Engineer_Resume.pdf";
         link.click();
       }}
     >

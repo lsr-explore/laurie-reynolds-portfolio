@@ -12,7 +12,7 @@ export function ImpactSection() {
           <p className="mt-4 text-muted-foreground">
             My experience includes high-volume payment systems, FDA-regulated
             scientific software, accessible government applications, and the
-            frontend practices that help teams maintain them.
+            front-end practices that help teams maintain them.
           </p>
         </div>
 

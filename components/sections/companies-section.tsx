@@ -18,14 +18,16 @@ export function CompaniesSection() {
                 className="flex h-24 w-full items-center justify-center rounded-lg p-3"
                 style={{ backgroundColor: company.logoBackground ?? "#ffffff" }}
               >
+                <div className="relative h-full w-full">
                 <Image
                   src={company.logo}
                   alt=""
-                  width={160}
-                  height={72}
+                  fill
+                  sizes="(min-width: 1152px) 208px, (min-width: 1024px) 20vw, (min-width: 640px) 28vw, 40vw"
                   className="h-full w-full object-contain"
                   style={{ transform: `scale(${company.logoScale ?? 1})` }}
                 />
+                </div>
               </div>
               <span className="text-sm font-medium text-muted-foreground">
                 {company.name}

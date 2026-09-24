@@ -58,7 +58,7 @@ export const stories: Story[] = [
       { label: "Time period", value: "During my 2019 — 2024 Walmart tenure" },
       {
         label: "My role",
-        value: "Staff Front-End Software Engineer and frontend technical lead",
+        value: "Staff Front-End Software Engineer and front-end technical lead",
       },
       {
         label: "Team",
@@ -77,7 +77,7 @@ export const stories: Story[] = [
       {
         label: "Areas of focus",
         value:
-          "Reusable frontend architecture, payment verification, accessibility, testing, reliability, and PCI DSS compliance",
+          "Reusable front-end architecture, payment verification, accessibility, testing, reliability, and PCI DSS compliance",
       },
       {
         label: "Confidentiality",
@@ -104,7 +104,7 @@ export const stories: Story[] = [
     },
     responsibility: {
       intro:
-        "I owned the frontend technical design and primary React implementation of the shared Wallet component. I was responsible for making the component configurable enough to serve several purchase flows while keeping payment-specific behavior understandable and testable.",
+        "I owned the front-end technical design and primary React implementation of the shared Wallet component. I was responsible for making the component configurable enough to serve several purchase flows while keeping payment-specific behavior understandable and testable.",
       items: [
         "Designed the component architecture and public configuration interfaces",
         "Built card-type-aware form rendering and multiple layout modes",
@@ -140,12 +140,12 @@ export const stories: Story[] = [
     ],
     workflow: {
       intro:
-        "At a high level, the frontend coordinated a configurable payment experience across checkout surfaces while keeping transaction processing and verification behind service boundaries.",
+        "At a high level, the front end coordinated a configurable payment experience across checkout surfaces while keeping transaction processing and verification behind service boundaries.",
       stagesLabel: "Responsibility",
       stages: [
         "A purchase surface initializes Wallet with its supported payment methods and layout configuration.",
         "Wallet identifies the selected method or detected card type and renders the required fields and validation.",
-        "The frontend coordinates verification through the established payment service boundary and applies bounded retry behavior for transient failures.",
+        "The front end coordinates verification through the established payment service boundary and applies bounded retry behavior for transient failures.",
         "The host purchase flow receives a consistent result and continues its existing order workflow.",
         "Tests and operational telemetry help detect regressions as additional surfaces adopt the shared component.",
       ],
@@ -166,7 +166,7 @@ export const stories: Story[] = [
       "The work crossed product boundaries, so the technical design alone was not enough. I worked with the teams responsible for the adopting purchase flows, backend payment services, mobile clients, UX, product, and information security. I used the component interfaces and migration plan to make assumptions visible, resolve differences between flows, and let teams adopt the shared implementation without coordinating a single release.",
     ],
     outcome: [
-      "The Wallet component replaced four separate payment form implementations and became the shared payment UI across Walmart.com purchase flows. It reduced duplicated frontend logic and made later payment-method work more reusable because teams no longer had to implement the same behavior independently in each surface.",
+      "The Wallet component replaced four separate payment form implementations and became the shared payment UI across Walmart.com purchase flows. It reduced duplicated front-end logic and made later payment-method work more reusable because teams no longer had to implement the same behavior independently in each surface.",
       "The component supported millions of daily checkouts. Its retry and recovery behavior reduced the impact of transient verification failures, and the broader implementation passed PCI audit without blocker findings.",
     ],
     learned: [
@@ -189,7 +189,7 @@ export const stories: Story[] = [
     role: "Staff Front-End Software Engineer",
     period: "2019 — 2024",
     summary:
-      "I led the frontend integration that enabled WIC participants to use eligible benefits in Walmart's online grocery checkout. The work combined a regulated payment flow, item-level eligibility, and split tender within an existing checkout system while maintaining clear and accessible customer guidance.",
+      "I led the front-end integration that enabled WIC participants to use eligible benefits in Walmart's online grocery checkout. The work combined a regulated payment flow, item-level eligibility, and split tender within an existing checkout system while maintaining clear and accessible customer guidance.",
     technologies: [
       "React",
       "TypeScript",
@@ -204,7 +204,7 @@ export const stories: Story[] = [
       {
         label: "My role",
         value:
-          "Staff Front-End Software Engineer and frontend integration lead",
+          "Staff Front-End Software Engineer and front-end integration lead",
       },
       {
         label: "Team",
@@ -217,7 +217,7 @@ export const stories: Story[] = [
       },
       {
         label: "Technologies",
-        value: "React, TypeScript, GraphQL, Node.js, automated frontend testing",
+        value: "React, TypeScript, GraphQL, Node.js, automated front-end testing",
       },
       {
         label: "Areas of focus",
@@ -249,12 +249,12 @@ export const stories: Story[] = [
     },
     responsibility: {
       intro:
-        "I led the web frontend integration of WIC as a payment method. My responsibility covered the customer-facing flow and its integration with the existing checkout and payments architecture; backend benefit processing and state program decisions remained with their respective teams and stakeholders.",
+        "I led the web front-end integration of WIC as a payment method. My responsibility covered the customer-facing flow and its integration with the existing checkout and payments architecture; backend benefit processing and state program decisions remained with their respective teams and stakeholders.",
       items: [
         "Built the WIC card entry and validation experience",
         "Added item-level eligibility indicators so customers could understand how benefits applied to their cart",
         "Integrated split-tender behavior so WIC and another payment method could be used in one transaction",
-        "Defined frontend states for eligibility, validation, partial coverage, errors, and recovery",
+        "Defined front-end states for eligibility, validation, partial coverage, errors, and recovery",
         "Worked with backend, product, and state agency stakeholders to translate program rules into a usable checkout flow",
         "Applied the payments team's shift-left accessibility and automated testing practices",
         "Supported pilot rollout and the path to subsequent state implementations",
@@ -308,7 +308,7 @@ export const stories: Story[] = [
       ],
     },
     collaboration: [
-      "The frontend sat at the intersection of program policy, checkout behavior, and payment processing. I worked with backend engineers and product partners to turn eligibility and split-tender rules into explicit interface states. I also collaborated with state agency stakeholders to validate that the customer experience reflected program requirements while remaining understandable within Walmart's existing checkout patterns.",
+      "The front end sat at the intersection of program policy, checkout behavior, and payment processing. I worked with backend engineers and product partners to turn eligibility and split-tender rules into explicit interface states. I also collaborated with state agency stakeholders to validate that the customer experience reflected program requirements while remaining understandable within Walmart's existing checkout patterns.",
       "When requirements crossed organizational boundaries, I used concrete workflow states and edge cases to expose ambiguity early. This helped the team distinguish policy decisions from technical implementation choices and gave engineering and product a common basis for review.",
     ],
     outcome: [

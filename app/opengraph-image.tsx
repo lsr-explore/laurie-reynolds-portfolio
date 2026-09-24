@@ -68,7 +68,7 @@ export default function Image() {
             lineHeight: 1.4,
           }}
         >
-          Building frontend systems for complex, high-impact applications
+          Building front-end systems for complex, high-impact applications
         </div>
 
         {/* Bottom accent */}

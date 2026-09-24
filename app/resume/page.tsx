@@ -11,50 +11,48 @@ export const metadata: Metadata = {
 };
 
 const resumeSummary = [
-  "Led front-end architecture for Walmart’s global payment flows (SNAP, WIC, PayPal, Affirm, and credit cards), supporting millions of daily users.",
-  "Introduced and scaled accessibility tooling (jsx-a11y, jest-axe) in a 1,000+ developer monorepo, shipping payment systems with zero blocker accessibility bugs.",
-  "Designed and delivered FDA-compliant diagnostic UIs and medical device software at Thermo Fisher and Siemens.",
-  "Strong hands-on experience building high-scale React and TypeScript applications with a focus on payment experiences.",
-  "Rapidly transitioned across biotech, civic tech, retail, and AI prototyping, consistently ramping up on new stacks and domains.",
-  "Drove alignment through early prototyping, journey-based technical designs, and mentoring developers.",
-  "Collaborative partner across product, design, security, and engineering teams, delivering reliable systems used at scale.",
+  "Senior/Staff Front-end engineer with deep experience building accessible, high-scale applications across global e-commerce (Walmart Payments), civic tech (U.S. Digital Response, Nava PBC), and FDA-regulated systems (Thermo Fisher, Siemens Medical/Acuson).",
+  "Led frontend engineering for web payment systems on Walmart.com (Supplemental Nutrition Assistance Program (SNAP), Women, Infants, and Children (WIC), PayPal, Affirm, Credit Card) serving millions of daily users.",
+  "Introduced and scaled accessibility tooling (eslint-plugin-jsx-a11y, jest-axe) in a 1,000+ developer monorepo, shipping payment systems with zero blocker accessibility bugs.",
+  "Currently expanding into AI-enabled application development, including retrieval-augmented generation (RAG), agentic workflows, evaluation, and grounded AI experiences, while continuing hands-on work in React, Next.js, accessibility, and front-end architecture.",
+  "Drives alignment through early prototyping, journey-based technical design, and mentoring; collaborative across product, design, security, and engineering.",
 ];
 
 const resumeSkills = [
-  ["Languages & Frameworks", "JavaScript (ES6+), TypeScript, React, Node.js, Vue, Next.js, GraphQL, Python, Tailwind CSS, D3.js, Figma, Redux, Design Systems, SSR, Tachyons"],
-  ["Testing & Tooling", "Jest, TestCafe, React Testing Library, Mock Service Worker, axe DevTools, eslint-plugin-jsx-a11y"],
+  ["Languages & Frameworks", "TypeScript, JavaScript (ES6+), React, Next.js, Node.js, GraphQL, Python, Vue, Tailwind CSS, D3.js, Figma, Redux, Design Systems, SSR"],
+  ["AI & Data", "OpenAI API, RAG, Postgres/pgvector, AI evaluation"],
+  ["Testing & Tooling", "Vitest, Jest, Playwright, React Testing Library, Mock Service Worker, axe DevTools, eslint-plugin-jsx-a11y"],
   ["DevOps & Deployment", "Docker, CI/CD, Vercel, Splunk, PostgreSQL, MSSQL, MySQL"],
-  ["AI & Data Tools", "OpenAI API, Hugging Face, Mermaid.js, D3.js"],
-  ["Other", "Agile, Accessibility (a11y), Performance Optimization, Payment Card Industry Data Security (PCI DSS) Compliance, Scrum Certification"],
+  ["Other", "Accessibility (a11y), Performance Optimization, PCI DSS, CCPA, FDA 21 CFR Part 11, Agile, Scrum Certification"],
 ];
 
 const experience = [
   {
-    title: "Independent Front-End Engineer",
+    title: "Independent Software Engineer - Front-End & Applied AI",
     company: "",
     location: "Fully Remote",
     period: "May 2025 — Present",
     description:
-      "Building accessibility-focused frontend tools and experimental developer workflows using modern React and Next.js stacks.",
+      "Building and evaluating modern front-end and AI-enabled applications while deepening expertise in agentic AI, retrieval-augmented generation, accessibility, and scalable application architecture.",
     highlights: [
-      "Developed WCAG-focused RAG prototypes to explore AI-assisted accessibility guidance using local embeddings, evaluation pipelines, and retrieval tuning.",
-      "Conducted accessibility reviews and remediation support for nonprofit websites.",
+      "Design and build React/Next.js applications and prototypes exploring AI-assisted workflows, RAG, structured retrieval, tool use, citations, evaluation, and graceful failure modes.",
+      "Develop ArtLoupe, an AI-assisted art exploration and analysis platform integrating external museum and image APIs with accessible, responsive data visualizations and AI-generated analysis.",
+      "Apply production engineering practices—including accessibility, automated testing, performance, observability, and component architecture—to experimental and AI-enabled applications.",
     ],
-    tech: [
-      "Next.js",
-      "React",
-      "OpenAI API",
-      "Hugging Face",
-      "Tailwind CSS",
-      "D3.js",
-      "Node",
-      "Postgres",
-      "Vercel",
-      "Accessibility",
-    ],
+    tech: ["TypeScript", "React", "Next.js", "Astro", "Tailwind CSS", "D3.js", "Node.js", "Python", "OpenAI API", "Postgres/pgvector", "Supabase", "Vercel", "Vitest", "Playwright", "Storybook"],
   },
   {
-    title: "Senior Software Engineer (Volunteer)",
+    title: "Principal Engineer",
+    company: "Nava PBC",
+    location: "Fully Remote",
+    period: "February 2025 — May 2025",
+    description:
+      "Brought in to help form a new team supporting the New Jersey Department of Labor’s unemployment services. Onboarded and mentored several engineers, coached one new hire on front-end work, established a meeting-free focus day, and ensured a smooth handoff to the incoming team lead.",
+    highlights: [],
+    tech: [],
+  },
+  {
+    title: "Senior Front-End Engineer (Volunteer)",
     company: "U.S. Digital Response",
     location: "Fully Remote",
     period: "October 2024 — February 2025",
@@ -66,7 +64,11 @@ const experience = [
     tech: ["Node", "Postgres", "Accessibility", "Vue", "Docker"],
   },
   {
-    title: "Staff Front-End Software Engineer",
+    title: "Staff Software Engineer",
+    positions: [
+      { title: "Staff Software Engineer", period: "May 2023 — August 2024" },
+      { title: "Senior Software Engineer", period: "February 2019 — May 2023" },
+    ],
     company: "Walmart Global Tech",
     location: "Carlsbad, CA and Fully Remote",
     period: "February 2019 — August 2024",
@@ -88,7 +90,6 @@ const experience = [
           "Led InfoSec submissions for web and mobile Payments applications (PCI compliance, audit readiness).",
           "Contributed to the company-wide California Consumer Privacy Act (CCPA) compliance initiative under a strict regulatory deadline, supporting production cutover and release coordination.",
           "Built a schema-driven nutrition label renderer to support regulatory update requirements, enabling structured, maintainable layout changes.",
-          "Participated in accessibility tool evaluation and collaborated with cross-functional teams to strengthen compliance workflows.",
         ],
       },
       {
@@ -144,7 +145,7 @@ const experience = [
     tech: ["React", "Redux", "Grommet", "Webpack", "MySQL", "Elasticsearch", "Kibana", "Node", "Java", "JavaScript", "ES6", "Sketch", "InVision", "Jira", "Confluence"],
   },
   {
-    title: "Senior Front-End Software Engineer",
+    title: "Senior Software Engineer",
     company: "Kofile",
     location: "San Francisco, CA",
     period: "April 2016 — September 2017",
@@ -157,7 +158,7 @@ const experience = [
     title: "Career Transition & Volunteer Work",
     company: "Code for San Jose",
     location: "San Jose, CA",
-    period: "February 2015 — August 2016",
+    period: "February 2015 — April 2016",
     description:
       "Collaborated with the City of San Jose Economics Office to build an interactive dashboard with D3.js visualizations and configurable data displays. First React/D3 project, marking transition from scientific programming to web development.",
     highlights: [],
@@ -174,12 +175,12 @@ const earlierExperience = [
     description: "Managed laboratory software development in a biotech startup using C#, WPF, SQL Server, Python, Django, and D3.js.",
   },
   {
-    title: "Senior Front-End Software Engineer",
+    title: "Lead Software Engineer",
     company: "Thermo Fisher Scientific",
     location: "San Jose, CA",
-    period: "6 years",
+    period: "7 years",
     description:
-      "Led development of FDA-regulated laboratory and diagnostic applications, delivering 21 CFR Part 11 compliant software for drug discovery and Olympic-level testing collaborations.",
+      "Led development of FDA-regulated laboratory and diagnostic applications, delivering 21 CFR Part 11 compliant software for drug discovery. Supported collaboration to use Thermo Fisher products for drug testing at the 2012 Olympics.",
   },
   {
     title: "Senior Software Engineer",
@@ -200,7 +201,7 @@ export default function ResumePage() {
           <p className="mt-2 text-muted-foreground">
             Senior Front-End Software Engineer
           </p>
-          <p className="mt-1 text-sm text-muted-foreground">Laurie Reynolds · Fully Remote in CA, USA</p>
+          <p className="mt-1 text-sm text-muted-foreground">Laurie Reynolds · Remote, CA, USA</p>
         </div>
         <ResumeDownloadButton />
       </div>
@@ -253,6 +254,16 @@ export default function ResumePage() {
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
+              {role.positions && (
+                <ul className="space-y-2 text-sm">
+                  {role.positions.map((position) => (
+                    <li key={position.title} className="flex flex-col gap-1 sm:flex-row sm:justify-between sm:gap-4">
+                      <span className="font-medium">{position.title}</span>
+                      <span className="text-muted-foreground">{position.period}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
               <p className="text-sm text-muted-foreground">
                 {role.description}
               </p>
@@ -290,7 +301,7 @@ export default function ResumePage() {
       </h2>
       <p className="mb-6 text-sm text-muted-foreground">
         Senior engineering roles across medical imaging, biotech, and regulated
-        scientific systems (1999 — 2015).
+        scientific systems (1999 — 2013).
       </p>
       <div className="space-y-4">
         {earlierExperience.map((role) => (
@@ -323,12 +334,11 @@ export default function ResumePage() {
       <Separator className="my-12" />
       <h2 className="mb-6 text-2xl font-bold">Media and Financial Experience</h2>
       <Card>
-        <CardHeader><CardTitle>1986 — 1999</CardTitle></CardHeader>
         <CardContent>
           <p className="text-sm text-muted-foreground">
             Rovi Corporation, Knight Ridder Digital, Associated Press, Thomson
             Grass Valley (Dubner Computer Systems), Tudor Investments, Knight
-            Ridder Financial, Sony Electronics, Medical Division.
+            Ridder Financial, Sony Electronics (Medical Division).
           </p>
         </CardContent>
       </Card>
@@ -341,7 +351,7 @@ export default function ResumePage() {
           <CardHeader>
             <div className="flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
               <div>
-                <CardTitle className="text-base">Volunteer</CardTitle>
+                <CardTitle className="text-base">Web Development &amp; A11y Evaluations (Volunteer)</CardTitle>
                 <a
                   href="https://accessiblecommunity.org/"
                   target="_blank"
@@ -358,10 +368,14 @@ export default function ResumePage() {
           </CardHeader>
           <CardContent>
             <p className="text-sm text-muted-foreground">
-              Evaluating small nonprofit organizations&apos; websites and
-              improving internal tools to support accessibility education and
-              outreach.
+              Accessibility evaluations for nonprofit and small-business websites;
+              site updates plus type-checking and end-to-end testing added to CI.
             </p>
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {["Astro", "TypeScript", "Playwright"].map((tech) => (
+                <Badge key={tech} variant="secondary" className="text-xs">{tech}</Badge>
+              ))}
+            </div>
           </CardContent>
         </Card>
         <Card>
