@@ -1,11 +1,11 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { howIThinkCards } from "@/lib/data";
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { howIThinkCards } from '@/lib/data';
 
 function CardIcon({ icon }: { icon: string }) {
-  const iconClass = "h-10 w-10 text-accent";
+  const iconClass = 'h-10 w-10 text-accent';
 
   switch (icon) {
-    case "shield":
+    case 'shield':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ function CardIcon({ icon }: { icon: string }) {
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
         </svg>
       );
-    case "accessibility":
+    case 'accessibility':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ function CardIcon({ icon }: { icon: string }) {
           <path d="M9 20l3-7 3 7" />
         </svg>
       );
-    case "collaboration":
+    case 'collaboration':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ function CardIcon({ icon }: { icon: string }) {
           <path d="M16 3.13a4 4 0 0 1 0 7.75" />
         </svg>
       );
-    case "iterate":
+    case 'iterate':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +78,7 @@ function CardIcon({ icon }: { icon: string }) {
           <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
         </svg>
       );
-    case "workflow":
+    case 'workflow':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -108,9 +108,7 @@ export function HowIWorkSection() {
     <section>
       <div className="page-container">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="font-sans text-3xl font-light md:text-4xl">
-            How I Work
-          </h2>
+          <h2 className="font-sans text-3xl font-light md:text-4xl">How I Work</h2>
           <p className="mt-4 text-muted-foreground">
             A few principles that have shaped how I build software and work with teams.
           </p>
@@ -118,15 +116,20 @@ export function HowIWorkSection() {
 
         <div className="mt-8 md:mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-6">
           {howIThinkCards.map((card, index) => (
-            <Card key={card.title} className={["border-t-4 border-t-accent transition-shadow hover:shadow-md", "lg:col-span-2", index === 3 ? "lg:col-start-2" : "",].join(" ")}>
+            <Card
+              key={card.title}
+              className={[
+                'border-t-4 border-t-accent transition-shadow hover:shadow-md',
+                'lg:col-span-2',
+                index === 3 ? 'lg:col-start-2' : '',
+              ].join(' ')}
+            >
               <CardHeader>
                 <CardIcon icon={card.icon} />
                 <CardTitle className="text-base">{card.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  {card.description}
-                </p>
+                <p className="text-sm text-muted-foreground">{card.description}</p>
               </CardContent>
             </Card>
           ))}

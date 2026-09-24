@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { getStory, publishedStories } from "@/lib/stories";
-import { BackToTopButton } from "../back-to-top-button";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
+import { getStory, publishedStories } from '@/lib/stories';
+import { BackToTopButton } from '../back-to-top-button';
 
 export function generateStaticParams() {
   return publishedStories.map((story) => ({ slug: story.slug }));
@@ -19,7 +19,7 @@ export async function generateMetadata({
   const story = getStory(slug);
 
   if (!story) {
-    return { title: "Work | Laurie Reynolds" };
+    return { title: 'Work | Laurie Reynolds' };
   }
 
   return {
@@ -28,19 +28,15 @@ export async function generateMetadata({
     openGraph: {
       title: `${story.title} | Laurie Reynolds`,
       description: story.summary,
-      type: "article",
+      type: 'article',
     },
   };
 }
 
-const headingClass = "mb-3 text-2xl font-semibold";
-const proseClass = "space-y-4 text-muted-foreground";
+const headingClass = 'mb-3 text-2xl font-semibold';
+const proseClass = 'space-y-4 text-muted-foreground';
 
-export default async function StoryPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export default async function StoryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const story = getStory(slug);
 
@@ -58,9 +54,7 @@ export default async function StoryPage({
       </Link>
 
       <header className="mt-6">
-        <h1 className="font-sans text-3xl font-light md:text-4xl">
-          {story.title}
-        </h1>
+        <h1 className="font-sans text-3xl font-light md:text-4xl">{story.title}</h1>
         <p className="mt-2 text-sm text-primary">
           {story.organization} &middot; {story.role} &middot; {story.period}
         </p>
@@ -85,9 +79,7 @@ export default async function StoryPage({
         <dl className="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-[minmax(8rem,12rem)_1fr]">
           {story.atAGlance.map((item) => (
             <div key={item.label} className="contents">
-              <dt className="text-sm font-semibold text-foreground">
-                {item.label}
-              </dt>
+              <dt className="text-sm font-semibold text-foreground">{item.label}</dt>
               <dd className="text-sm text-muted-foreground">{item.value}</dd>
             </div>
           ))}
@@ -141,8 +133,7 @@ export default async function StoryPage({
           {story.decisions.map((decision, index) => (
             <div key={decision.title}>
               <h3 className="mb-2 text-lg font-semibold">
-                <span className="text-primary">Decision {index + 1}</span>{" "}
-                &mdash; {decision.title}
+                <span className="text-primary">Decision {index + 1}</span> &mdash; {decision.title}
               </h3>
               <div className={proseClass}>
                 {decision.paragraphs.map((paragraph) => (
@@ -240,9 +231,7 @@ export default async function StoryPage({
                     href={`/work/${related.slug}`}
                     className="block rounded-xl ring-1 ring-foreground/10 bg-card p-4 transition-shadow hover:shadow-md"
                   >
-                    <span className="font-medium text-foreground">
-                      {related.title}
-                    </span>
+                    <span className="font-medium text-foreground">{related.title}</span>
                     <span className="mt-1 block text-sm text-muted-foreground">
                       {related.blurb}
                     </span>

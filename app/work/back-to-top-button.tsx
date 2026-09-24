@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
+import { useEffect, useState } from 'react';
+import { Button } from '@/components/ui/button';
 
 export function BackToTopButton() {
   const [visible, setVisible] = useState(false);
@@ -10,15 +10,15 @@ export function BackToTopButton() {
     function onScroll() {
       setVisible(window.scrollY > 400);
     }
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   if (!visible) return null;
 
   return (
     <Button
-      onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       variant="outline"
       size="icon"
       className="fixed bottom-8 right-8 z-50 rounded-full shadow-md"

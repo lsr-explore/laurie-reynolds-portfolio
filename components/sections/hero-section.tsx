@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import { buttonVariants } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import Image from 'next/image';
+import Link from 'next/link';
+import { buttonVariants } from '@/components/ui/button';
+import { cn } from '@/lib/utils';
 
 export function HeroSection() {
   return (
@@ -15,27 +15,24 @@ export function HeroSection() {
             Building front-end systems for complex, high-impact applications
           </h1>
           <p className="max-w-lg text-lg text-muted-foreground">
-            I&apos;m a Senior Front-End Engineer with experience building payment systems,
-            regulated medical software, and civic technology. My work emphasizes
-            accessible interfaces, reliable systems, and reusable front-end architecture.
+            I&apos;m a Senior Front-End Engineer with experience building payment systems, regulated
+            medical software, and civic technology. My work emphasizes accessible interfaces,
+            reliable systems, and reusable front-end architecture.
           </p>
           <p>
-            I&apos;m currently interested in senior front-end and front-end platform roles
-            where I can remain hands-on while helping teams improve architecture,
-            accessibility, testing, and delivery.
+            I&apos;m currently interested in senior front-end and front-end platform roles where I
+            can remain hands-on while helping teams improve architecture, accessibility, testing,
+            and delivery.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link
-              href="/work"
-              className={cn(buttonVariants({ size: "lg" }))}
-            >
+            <Link href="/work" className={cn(buttonVariants({ size: 'lg' }))}>
               View my work
             </Link>
             <a
               href="https://www.linkedin.com/in/lauriesreynolds"
               target="_blank"
               rel="noopener noreferrer"
-              className={cn(buttonVariants({ variant: "outline", size: "lg" }))}
+              className={cn(buttonVariants({ variant: 'outline', size: 'lg' }))}
             >
               Connect
             </a>
@@ -54,7 +51,16 @@ export function HeroSection() {
             className="block aspect-[4/5] h-auto w-full rounded-lg object-cover"
           />
           <figcaption className="mt-3 text-right text-sm leading-relaxed text-muted-foreground">
-            Photo by <a className="underline" href="https://www.pexels.com/photo/aerial-view-of-people-at-the-beach-28209792/" target="_blank" rel="noopener noreferrer">Hudson McDonald</a> from Pexels
+            Photo by{' '}
+            <a
+              className="underline"
+              href="https://www.pexels.com/photo/aerial-view-of-people-at-the-beach-28209792/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Hudson McDonald
+            </a>{' '}
+            from Pexels
           </figcaption>
         </figure>
       </div>

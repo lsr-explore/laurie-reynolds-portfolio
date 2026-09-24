@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import Link from "next/link";
+import Link from 'next/link';
+import { useState } from 'react';
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -11,7 +11,7 @@ export function MobileNav() {
       <button
         onClick={() => setOpen(!open)}
         aria-expanded={open}
-        aria-label={open ? "Close menu" : "Open menu"}
+        aria-label={open ? 'Close menu' : 'Open menu'}
         className="p-2 text-foreground"
       >
         {open ? (

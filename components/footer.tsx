@@ -3,8 +3,7 @@ export function Footer() {
     <footer className="border-t border-border py-8">
       <div className="mx-auto max-w-6xl px-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Laurie Reynolds. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Laurie Reynolds. All rights reserved.
         </p>
         <a
           href="https://www.linkedin.com/in/lauriesreynolds/"
