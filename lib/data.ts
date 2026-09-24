@@ -136,6 +136,7 @@ export const companies = [
   {
     name: "Code for San Jose",
     logo: "/logos/companies/code-for-san-jose.png",
+    logoScale: 1.3,
   },
   {
     name: "Sony",

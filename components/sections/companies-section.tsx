@@ -26,6 +26,7 @@ export function CompaniesSection() {
                   width={160}
                   height={72}
                   className="h-full w-full object-contain"
+                  style={{ transform: `scale(${company.logoScale ?? 1})` }}
                 />
               </div>
               <span className="text-sm font-medium text-muted-foreground">
