@@ -16,10 +16,17 @@ updates:
       production-minor-patch:
         dependency-type: production
         update-types: [minor, patch]
-    # Uncomment to upgrade Next.js majors deliberately rather than via Dependabot:
-    # ignore:
-    #   - dependency-name: next
-    #     update-types: [version-update:semver-major]
+    ignore:
+      # eslint-plugin-react 7.37.5 / eslint-plugin-jsx-a11y 6.10.2 (via eslint-config-next)
+      # don't support ESLint 10 yet. Revisit when they do.
+      - dependency-name: eslint
+        update-types: [version-update:semver-major]
+      # Match the Node 24 runtime (.nvmrc / Vercel). Bump with .nvmrc when upgrading Node.
+      - dependency-name: "@types/node"
+        versions: [">=25"]
+      # Uncomment to upgrade Next.js majors deliberately rather than via Dependabot:
+      # - dependency-name: next
+      #   update-types: [version-update:semver-major]
 
   # Keep the actions in .github/workflows/ci.yml up to date.
   - package-ecosystem: github-actions
