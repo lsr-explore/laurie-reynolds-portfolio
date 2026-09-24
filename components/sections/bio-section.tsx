@@ -2,20 +2,20 @@ import Image from "next/image";
 
 export function BioSection() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-      <h1 className="mb-12 text-center font-sans text-4xl font-light md:text-5xl">
+    <section className="mx-auto max-w-6xl px-6">
+      <h1 className="mb-8 md:mb-10 text-center font-sans text-4xl font-light md:text-5xl">
         About
       </h1>
 
-      <div className="flex flex-col gap-12 md:flex-row md:items-start">
+      <div className="flex flex-col gap-8 md:flex-row md:items-start md:gap-10 lg:gap-12">
         {/* Profile photo */}
-        <div className="flex-shrink-0">
+        <div className="mx-auto w-full max-w-[280px] shrink-0 md:mx-0 md:w-56 lg:w-64">
           <Image
             src="/laurieprofile.jpeg"
             alt="Portrait photo of Laurie Reynolds"
             width={280}
             height={280}
-            className="rounded-lg object-cover"
+            className="h-auto w-full rounded-lg object-cover"
             priority
           />
         </div>
@@ -45,7 +45,7 @@ export function BioSection() {
             testing practices, and helping teams understand the complete customer journey.
           </p>
           <p>
-            Across these roles, I've brought hands-on frontend engineering,
+            Across these roles, I&apos;ve brought hands-on frontend engineering,
             systems thinking, and a practical approach to making complex software
             easier for people to use and teams to maintain.
           </p>

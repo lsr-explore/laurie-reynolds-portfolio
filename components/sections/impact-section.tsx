@@ -3,7 +3,7 @@ import { impactCards } from "@/lib/data";
 
 export function ImpactSection() {
   return (
-    <section id="impact" className="py-16 md:py-24">
+    <section id="impact">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-sans text-3xl font-light md:text-4xl">
@@ -16,9 +16,9 @@ export function ImpactSection() {
           </p>
         </div>
 
-        {/* Top row: 3 cards */}
-        <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {impactCards.slice(0, 3).map((card) => (
+        {/* Shared-width impact cards */}
+        <div className="mt-8 md:mt-10 grid grid-cols-1 gap-6 lg:grid-cols-3">
+          {impactCards.map((card) => (
             <Card
               key={card.title}
               className="border-l-4 border-l-primary transition-shadow hover:shadow-md"
@@ -35,26 +35,7 @@ export function ImpactSection() {
           ))}
         </div>
 
-        {/* Bottom row: 2 cards centered */}
-        <div className="mt-6 flex justify-center">
-          <div className="grid w-full max-w-2xl grid-cols-1 gap-6 md:grid-cols-2">
-            {impactCards.slice(3).map((card) => (
-              <Card
-                key={card.title}
-                className="border-l-4 border-l-primary transition-shadow hover:shadow-md"
-              >
-                <CardHeader>
-                  <CardTitle className="text-lg">{card.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    {card.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+
       </div>
     </section>
   );

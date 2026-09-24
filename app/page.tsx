@@ -5,11 +5,11 @@ import { CompaniesSection } from "@/components/sections/companies-section";
 
 export default function Home() {
   return (
-    <>
+    <div className="space-y-16 py-12 md:space-y-24 md:py-20">
       <HeroSection />
       <ImpactSection />
       <CompaniesSection />
       <SkillsSection />
-    </>
+    </div>
   );
 }

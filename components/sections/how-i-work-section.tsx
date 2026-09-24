@@ -105,7 +105,7 @@ function CardIcon({ icon }: { icon: string }) {
 
 export function HowIWorkSection() {
   return (
-    <section className="py-10">
+    <section>
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-sans text-3xl font-light md:text-4xl">
@@ -116,7 +116,7 @@ export function HowIWorkSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-6">
+        <div className="mt-8 md:mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-6">
           {howIThinkCards.map((card, index) => (
             <Card key={card.title} className={["border-t-4 border-t-accent transition-shadow hover:shadow-md", "lg:col-span-2", index === 3 ? "lg:col-start-2" : "",].join(" ")}>
               <CardHeader>

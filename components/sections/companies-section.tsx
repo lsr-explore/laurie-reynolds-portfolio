@@ -1,16 +1,14 @@
 import Image from "next/image";
-import { Separator } from "@/components/ui/separator";
 import { companies } from "@/lib/data";
 
 export function CompaniesSection() {
   return (
-    <section className="py-5">
-      <div className="mx-auto max-w-3xl px-6">
-        <Separator className="mb-12" />
+    <section>
+      <div className="mx-auto max-w-6xl px-6">
         <h2 className="text-center font-sans text-3xl font-light md:text-4xl">
           Organizations I&apos;ve Worked With
         </h2>
-        <ul className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3">
+        <ul className="mt-8 md:mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4 lg:gap-6">
           {companies.map((company) => (
             <li
               key={company.name}

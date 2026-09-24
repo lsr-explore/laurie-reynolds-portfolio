@@ -7,8 +7,26 @@ import { ResumeDownloadButton } from "./resume-download-button";
 export const metadata: Metadata = {
   title: "Resume | Laurie Reynolds",
   description:
-    "Resume of Laurie Reynolds — Senior Front-End Software Engineer with 25+ years of experience.",
+    "Resume of Laurie Reynolds — Senior Front-End Software Engineer specializing in payments, accessibility, and regulated medical software.",
 };
+
+const resumeSummary = [
+  "Led front-end architecture for Walmart’s global payment flows (SNAP, WIC, PayPal, Affirm, and credit cards), supporting millions of daily users.",
+  "Introduced and scaled accessibility tooling (jsx-a11y, jest-axe) in a 1,000+ developer monorepo, shipping payment systems with zero blocker accessibility bugs.",
+  "Designed and delivered FDA-compliant diagnostic UIs and medical device software at Thermo Fisher and Siemens.",
+  "Strong hands-on experience building high-scale React and TypeScript applications with a focus on payment experiences.",
+  "Rapidly transitioned across biotech, civic tech, retail, and AI prototyping, consistently ramping up on new stacks and domains.",
+  "Drove alignment through early prototyping, journey-based technical designs, and mentoring developers.",
+  "Collaborative partner across product, design, security, and engineering teams, delivering reliable systems used at scale.",
+];
+
+const resumeSkills = [
+  ["Languages & Frameworks", "JavaScript (ES6+), TypeScript, React, Node.js, Vue, Next.js, GraphQL, Python, Tailwind CSS, D3.js, Figma, Redux, Design Systems, SSR, Tachyons"],
+  ["Testing & Tooling", "Jest, TestCafe, React Testing Library, Mock Service Worker, axe DevTools, eslint-plugin-jsx-a11y"],
+  ["DevOps & Deployment", "Docker, CI/CD, Vercel, Splunk, PostgreSQL, MSSQL, MySQL"],
+  ["AI & Data Tools", "OpenAI API, Hugging Face, Mermaid.js, D3.js"],
+  ["Other", "Agile, Accessibility (a11y), Performance Optimization, Payment Card Industry Data Security (PCI DSS) Compliance, Scrum Certification"],
+];
 
 const experience = [
   {
@@ -41,7 +59,7 @@ const experience = [
     location: "Fully Remote",
     period: "October 2024 — February 2025",
     description:
-      "Extended Grant Finder functionality. Improved the testability and accessibility of the Grant Finder and ARPA Reporting applications.",
+      "Extended Grant Finder functionality. Improved the testability and accessibility of the Grant Finder and American Rescue Plan Act (ARPA) Reporting applications.",
     highlights: [
       "Refactored UI components for keyboard navigation and screen reader compatibility.",
     ],
@@ -53,14 +71,51 @@ const experience = [
     location: "Carlsbad, CA and Fully Remote",
     period: "February 2019 — August 2024",
     description:
-      "Led frontend engineering for web payment systems on Walmart.com (EBT SNAP, PayPal, WIC, credit card, Affirm) used by millions of customers daily.",
-    highlights: [
-      "Built a reusable React Wallet component that reduced duplication and simplified payment integration across Checkout, W+ Membership, Buy Now, and Subscription flows.",
-      "Implemented third-party payment verification with resilient retry logic to reduce transient failures and improve transaction reliability.",
-      "Led InfoSec submissions for web and mobile Payments applications (PCI compliance, audit readiness).",
-      "Introduced and scaled shift-left accessibility tooling (eslint-plugin-jsx-a11y, jest-axe) within a large frontend monorepo.",
-      "Reduced app load time and improved Core Web Vitals through bundle optimization, lazy loading, and skeleton UI.",
-      "Facilitated an accessibility workshop for ~50 engineers, product, and UX team members.",
+      "Led frontend engineering for web payment systems on Walmart.com (EBT SNAP, PayPal, WIC, credit card, Affirm) used by millions of customers daily. Focused on accessibility, performance, and maintainable architecture across checkout and billing experiences, collaborating closely with web, mobile, backend, product, UX, security, fraud, and international teams.",
+    highlights: [],
+    highlightGroups: [
+      {
+        title: "Architecture & Component Systems",
+        items: [
+          "Built a reusable React Wallet component that reduced duplication and simplified payment integration across Checkout, W+ Membership, Buy Now, and Subscription flows.",
+          "Implemented third-party payment verification with resilient retry logic to reduce transient failures, mitigate fraud risk, and improve transaction reliability.",
+          "Developed a dynamic, card-type-aware payment form that rendered required fields based on detected payment type and supported both side-panel and embedded checkout layouts without duplicating UI logic.",
+        ],
+      },
+      {
+        title: "Security & Compliance",
+        items: [
+          "Led InfoSec submissions for web and mobile Payments applications (PCI compliance, audit readiness).",
+          "Contributed to the company-wide California Consumer Privacy Act (CCPA) compliance initiative under a strict regulatory deadline, supporting production cutover and release coordination.",
+          "Built a schema-driven nutrition label renderer to support regulatory update requirements, enabling structured, maintainable layout changes.",
+          "Participated in accessibility tool evaluation and collaborated with cross-functional teams to strengthen compliance workflows.",
+        ],
+      },
+      {
+        title: "Performance, Experimentation & Reliability",
+        items: [
+          "Reduced app load time and improved Core Web Vitals through bundle optimization, lazy loading, and skeleton UI.",
+          "Proactively monitored checkout experiment dashboards, comparing control and variant error rates to identify discrepancies early and protect experiment validity.",
+          "Increased test coverage and reliability through audit and refactor of React/TestCafe integration suites.",
+          "Improved CI stability across frontend deployments using Mock Service Worker and test isolation.",
+        ],
+      },
+      {
+        title: "Accessibility Leadership",
+        items: [
+          "Introduced and scaled shift-left accessibility tooling (eslint-plugin-jsx-a11y, jest-axe) within a large frontend monorepo.",
+          "Remediated accessibility violations and launched payment systems with zero blocker accessibility bugs.",
+          "Facilitated an accessibility workshop for approximately 50 engineers, product, and UX team members, promoting accessible design and development practices.",
+          "Delivered internal talks on accessible design analysis and unit test strategies to reduce regressions.",
+        ],
+      },
+      {
+        title: "Operational Support & On-Call",
+        items: [
+          "Participated in on-call rotation during peak traffic periods, including holidays, supporting production incidents and collaborating with third-party payment providers to mitigate downtime.",
+          "Authored incident response guidelines and collected Splunk queries and dashboards to assist on-call engineers in rapid triage and recovery.",
+        ],
+      },
     ],
     tech: [
       "React",
@@ -71,8 +126,9 @@ const experience = [
       "React Testing Library",
       "TestCafe",
       "Mock Service Worker",
-      "Splunk",
-      "Accessibility",
+      "Splunk", "Figma", "JavaScript", "i18n", "Core Web Vitals",
+      "Tachyons", "Server-side rendering", "axe DevTools", "Chrome DevTools",
+      "Custom A/B experimentation platform", "Accessibility",
     ],
   },
   {
@@ -85,7 +141,7 @@ const experience = [
     highlights: [
       "Designed React-based reusable component system to support Natural Language Understanding (NLU) model workflows.",
     ],
-    tech: ["React", "Redux", "Webpack", "MySQL", "Elasticsearch", "Node"],
+    tech: ["React", "Redux", "Grommet", "Webpack", "MySQL", "Elasticsearch", "Kibana", "Node", "Java", "JavaScript", "ES6", "Sketch", "InVision", "Jira", "Confluence"],
   },
   {
     title: "Senior Front-End Software Engineer",
@@ -93,9 +149,9 @@ const experience = [
     location: "San Francisco, CA",
     period: "April 2016 — September 2017",
     description:
-      "Developed an administration application for clerks to configure the recording system. Worked closely with the UX team to achieve pixel-level match to the design.",
+      "Developed an administration application for clerks to configure the recording system. Worked closely with the UX team to develop new React components and achieve pixel-level match to the design.",
     highlights: [],
-    tech: ["React", "Redux", "Node", "MSSQL", "Postgres"],
+    tech: ["HTML", "CSS", "JavaScript", "React", "Redux", "Node", "MSSQL", "GitHub", "Karma", "Mocha", "CodeceptJS", "Sketch", "Postgres", "Semaphore", "Proxyquire", "Sinon", "React Router"],
   },
   {
     title: "Career Transition & Volunteer Work",
@@ -103,9 +159,9 @@ const experience = [
     location: "San Jose, CA",
     period: "February 2015 — August 2016",
     description:
-      "Collaborated with the City of San Jose Economics Office to build an interactive dashboard with D3.js visualizations. First React/D3 project, marking transition from scientific programming to web development.",
+      "Collaborated with the City of San Jose Economics Office to build an interactive dashboard with D3.js visualizations and configurable data displays. First React/D3 project, marking transition from scientific programming to web development.",
     highlights: [],
-    tech: ["React", "D3.js", "JavaScript", "Redux"],
+    tech: ["React", "D3.js", "HTML/CSS", "JavaScript", "Redux", "Travis CI", "Mocha", "Karma", "Sketch"],
   },
 ];
 
@@ -113,21 +169,25 @@ const earlierExperience = [
   {
     title: "Principal Scientific Programmer",
     company: "Nodality, Inc.",
+    location: "South San Francisco, CA",
     period: "1+ year",
+    description: "Managed laboratory software development in a biotech startup using C#, WPF, SQL Server, Python, Django, and D3.js.",
   },
   {
     title: "Senior Front-End Software Engineer",
     company: "Thermo Fisher Scientific",
+    location: "San Jose, CA",
     period: "6 years",
     description:
-      "Led development of FDA-regulated laboratory and diagnostic applications, delivering 21 CFR Part 11 compliant software.",
+      "Led development of FDA-regulated laboratory and diagnostic applications, delivering 21 CFR Part 11 compliant software for drug discovery and Olympic-level testing collaborations.",
   },
   {
     title: "Senior Software Engineer",
     company: "Siemens Medical Solutions (Acuson)",
+    location: "Mountain View, CA",
     period: "5 years",
     description:
-      "Developed advanced imaging UIs and visualization tools for Sequoia ultrasound systems.",
+      "Developed advanced imaging UIs and visualization tools for Sequoia ultrasound systems. Contributed to standards-aligned medical imaging workflows.",
   },
 ];
 
@@ -140,6 +200,7 @@ export default function ResumePage() {
           <p className="mt-2 text-muted-foreground">
             Senior Front-End Software Engineer
           </p>
+          <p className="mt-1 text-sm text-muted-foreground">Laurie Reynolds · Fully Remote in CA, USA</p>
         </div>
         <ResumeDownloadButton />
       </div>
@@ -149,18 +210,22 @@ export default function ResumePage() {
         <CardHeader>
           <CardTitle>Summary</CardTitle>
         </CardHeader>
-        <CardContent className="space-y-2 text-sm text-muted-foreground">
-          <p>
-            Led front-end architecture for Walmart&apos;s global payment flows
-            supporting millions of daily users. Introduced and scaled
-            accessibility tooling in a 1,000+ developer monorepo. Designed and
-            delivered FDA-compliant diagnostic UIs and medical device software.
-          </p>
-          <p>
-            Strong hands-on experience building high-scale React and TypeScript
-            applications with a focus on payment experiences, accessibility, and
-            performance optimization.
-          </p>
+        <CardContent>
+          <ul className="list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+            {resumeSummary.map((item) => <li key={item}>{item}</li>)}
+          </ul>
+        </CardContent>
+      </Card>
+
+      <h2 className="mb-6 text-2xl font-bold">Skills</h2>
+      <Card className="mb-8">
+        <CardContent className="space-y-4">
+          {resumeSkills.map(([label, skills]) => (
+            <div key={label}>
+              <h3 className="text-sm font-semibold">{label}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{skills}</p>
+            </div>
+          ))}
         </CardContent>
       </Card>
 
@@ -198,6 +263,14 @@ export default function ResumePage() {
                   ))}
                 </ul>
               )}
+              {role.highlightGroups?.map((group) => (
+                <div key={group.title}>
+                  <h3 className="mb-2 text-sm font-semibold">{group.title}</h3>
+                  <ul className="list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+                    {group.items.map((item) => <li key={item}>{item}</li>)}
+                  </ul>
+                </div>
+              ))}
               <div className="flex flex-wrap gap-1.5">
                 {role.tech.map((t) => (
                   <Badge key={t} variant="secondary" className="text-xs">
@@ -230,7 +303,10 @@ export default function ResumePage() {
                     {role.company}
                   </p>
                 </div>
-                <p className="text-sm text-muted-foreground">{role.period}</p>
+                <div className="text-left sm:text-right">
+                  <p className="text-sm text-muted-foreground">{role.period}</p>
+                  <p className="text-xs text-muted-foreground">{role.location}</p>
+                </div>
               </div>
             </CardHeader>
             {role.description && (
@@ -243,6 +319,19 @@ export default function ResumePage() {
           </Card>
         ))}
       </div>
+
+      <Separator className="my-12" />
+      <h2 className="mb-6 text-2xl font-bold">Media and Financial Experience</h2>
+      <Card>
+        <CardHeader><CardTitle>1986 — 1999</CardTitle></CardHeader>
+        <CardContent>
+          <p className="text-sm text-muted-foreground">
+            Rovi Corporation, Knight Ridder Digital, Associated Press, Thomson
+            Grass Valley (Dubner Computer Systems), Tudor Investments, Knight
+            Ridder Financial, Sony Electronics, Medical Division.
+          </p>
+        </CardContent>
+      </Card>
 
       {/* Volunteer */}
       <Separator className="my-12" />

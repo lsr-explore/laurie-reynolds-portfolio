@@ -182,7 +182,7 @@ export const howIThinkCards = [
     icon: "iterate" as const,
   },
   {
-    title: "Build shared understanidng",
+    title: "Build shared understanding",
     description:
       "I help teams build shared context through workshops, documentation, and hands-on learning. I've led sessions on accessibility and design patterns, explained complex laboratory workflows, and created onboarding guides that help new team members contribute sooner.",
     icon: "collaboration" as const,
@@ -204,6 +204,6 @@ export const inspirationImages = [
   },
   {
     src: "/pexels-ella-olsson-572949-3026809.jpg",
-    alt: "Freshly baked artisan bread on a cloth",
+    alt: "Freshly baked cake topped with sliced almonds",
   },
 ];
