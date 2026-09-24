@@ -1,5 +1,6 @@
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
-import { skillCategories } from "@/lib/data";
+import { skillCategories, skillLogos } from "@/lib/data";
 
 export function SkillsSection() {
   return (
@@ -15,10 +16,19 @@ export function SkillsSection() {
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 {category.label}
               </h3>
-              <ul className="flex flex-row space-x-4">
+              <ul className="flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
                   <li key={skill}>
-                    <Badge key={skill} variant="secondary">
+                    <Badge variant="secondary" className="h-auto gap-2 px-3 py-2">
+                      {skillLogos[skill] ? (
+                        <Image
+                          src={skillLogos[skill]}
+                          alt=""
+                          width={16}
+                          height={16}
+                          className="size-4 shrink-0 object-contain"
+                        />
+                      ) : null}
                       {skill}
                     </Badge>
                   </li>

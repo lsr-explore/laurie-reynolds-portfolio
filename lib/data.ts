@@ -16,6 +16,29 @@ export const impactCards = [
   },
 ];
 
+// Only branded tools have logos; concepts and standards retain text labels.
+export const skillLogos: Readonly<Record<string, string>> = {
+  "TypeScript": "/logos/skills/typescript.svg",
+  "JavaScript (ES6+)": "/logos/skills/javascript.svg",
+  "React": "/logos/skills/react.svg",
+  "Next.js": "/logos/skills/nextdotjs.svg",
+  "Vue": "/logos/skills/vuedotjs.svg",
+  "GraphQL": "/logos/skills/graphql.svg",
+  "Tailwind CSS": "/logos/skills/tailwindcss.svg",
+  "D3.js": "/logos/skills/d3dotjs.svg",
+  "Vitest": "/logos/skills/vitest.svg",
+  "Jest": "/logos/skills/jest.svg",
+  "Playwright": "/logos/skills/playwright.svg",
+  "React Testing Library": "/logos/skills/testinglibrary.svg",
+  "Mock Service Worker": "/logos/skills/mockserviceworker.svg",
+  "Node": "/logos/skills/nodedotjs.svg",
+  "Docker": "/logos/skills/docker.svg",
+  "Vercel": "/logos/skills/vercel.svg",
+  "Splunk": "/logos/skills/splunk.svg",
+  "OpenAI API": "/logos/skills/openai.svg",
+  "eslint-plugin-jsx-a11y": "/logos/skills/eslint.svg",
+};
+
 export const skillCategories = [
   {
     label: "Frontend",
@@ -80,19 +103,56 @@ export const skillCategories = [
 ];
 
 export const companies = [
-  "Walmart",
-  "U.S. Digital Response",
-  "[24]7.ai",
-  "Kofile",
-  "Thermo Fisher Scientific",
-  "Siemens",
-  "Nodality",
-  "Code for San Jose",
-  "Sony",
-  "Associated Press",
-  "Nava PBC",
-  "Accessible Community"
-
+  {
+    name: "Walmart Global Tech",
+    logo: "/logos/companies/walmart-global-tech.svg",
+    logoBackground: "#041e41",
+  },
+  {
+    name: "U.S. Digital Response",
+    logo: "/logos/companies/us-digital-response.svg",
+  },
+  {
+    name: "[24]7.ai",
+    logo: "/logos/companies/247-ai.svg",
+  },
+  {
+    name: "Kofile",
+    logo: "/logos/companies/kofile.svg",
+    logoBackground: "#193b34",
+  },
+  {
+    name: "Thermo Fisher Scientific",
+    logo: "/logos/companies/thermo-fisher.svg",
+  },
+  {
+    name: "Siemens",
+    logo: "/logos/companies/siemens.svg",
+  },
+  {
+    name: "Nodality",
+    logo: "/logos/companies/nodality.png",
+  },
+  {
+    name: "Code for San Jose",
+    logo: "/logos/companies/code-for-san-jose.png",
+  },
+  {
+    name: "Sony",
+    logo: "/logos/companies/sony.svg",
+  },
+  {
+    name: "Associated Press",
+    logo: "/logos/companies/associated-press.svg",
+  },
+  {
+    name: "Nava PBC",
+    logo: "/logos/companies/nava.svg",
+  },
+  {
+    name: "Accessible Community",
+    logo: "/logos/companies/accessible-community.svg",
+  },
 ];
 
 export const howIThinkCards = [
