@@ -16,7 +16,7 @@
       "!**/test-results",
       "!**/playwright-report",
       "!**/next-env.d.ts",
-      "!**/docs/stories/**",
+      "!**/docs/stories",
       "!.vercel"
     ],
     "ignoreUnknown": true
@@ -30,9 +30,9 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "a11y": {
-        "recommended": false
+        "preset": "none"
       },
       "suspicious": {
         "noExplicitAny": "warn"
