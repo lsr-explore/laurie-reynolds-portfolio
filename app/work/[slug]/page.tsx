@@ -47,7 +47,7 @@ export default async function StoryPage({ params }: { params: Promise<{ slug: st
   return (
     <article className="story-print page-container py-16 md:py-24">
       <Link
-        href="/work"
+        href="/#work"
         className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
       >
         <span aria-hidden="true">&larr;</span> All work
