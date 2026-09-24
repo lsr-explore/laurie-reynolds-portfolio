@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { impactCards } from "@/lib/data";
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { impactCards } from '@/lib/data';
 
 export function ImpactSection() {
   return (
@@ -10,9 +10,9 @@ export function ImpactSection() {
             Where I&apos;ve Made an Impact
           </h2>
           <p className="mt-4 text-muted-foreground">
-            My experience includes high-volume payment systems, FDA-regulated
-            scientific software, accessible government applications, and the
-            front-end practices that help teams maintain them.
+            My experience includes high-volume payment systems, FDA-regulated scientific software,
+            accessible government applications, and the front-end practices that help teams maintain
+            them.
           </p>
         </div>
 
@@ -27,15 +27,11 @@ export function ImpactSection() {
                 <CardTitle className="text-lg">{card.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  {card.description}
-                </p>
+                <p className="text-sm text-muted-foreground">{card.description}</p>
               </CardContent>
             </Card>
           ))}
         </div>
-
-
       </div>
     </section>
   );

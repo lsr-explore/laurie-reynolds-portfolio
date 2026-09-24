@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
-import { MobileNav } from "./mobile-nav";
+import Image from 'next/image';
+import Link from 'next/link';
+import { MobileNav } from './mobile-nav';
 
 export function Header() {
   return (
@@ -16,9 +16,7 @@ export function Header() {
             className="h-auto w-[70px] shrink-0"
             priority
           />
-          <span className="text-sm font-semibold text-foreground">
-            Laurie Reynolds
-          </span>
+          <span className="text-sm font-semibold text-foreground">Laurie Reynolds</span>
         </Link>
 
         {/* Desktop nav */}

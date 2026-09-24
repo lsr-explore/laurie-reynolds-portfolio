@@ -1,14 +1,14 @@
-"use client";
+'use client';
 
-import { Button } from "@/components/ui/button";
+import { Button } from '@/components/ui/button';
 
 export function ResumeDownloadButton() {
   return (
     <Button
       onClick={() => {
-        const link = document.createElement("a");
-        link.href = "/Laurie_Reynolds_2026_Senior_Front_End_Engineer_Resume.pdf";
-        link.download = "Laurie_Reynolds_2026_Senior_Front_End_Engineer_Resume.pdf";
+        const link = document.createElement('a');
+        link.href = '/Laurie_Reynolds_2026_Senior_Front_End_Engineer_Resume.pdf';
+        link.download = 'Laurie_Reynolds_2026_Senior_Front_End_Engineer_Resume.pdf';
         link.click();
       }}
     >

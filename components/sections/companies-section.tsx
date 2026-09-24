@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { companies } from "@/lib/data";
+import Image from 'next/image';
+import { companies } from '@/lib/data';
 
 export function CompaniesSection() {
   return (
@@ -16,22 +16,20 @@ export function CompaniesSection() {
             >
               <div
                 className="flex h-24 w-full items-center justify-center rounded-lg p-3"
-                style={{ backgroundColor: company.logoBackground ?? "#ffffff" }}
+                style={{ backgroundColor: company.logoBackground ?? '#ffffff' }}
               >
                 <div className="relative h-full w-full">
-                <Image
-                  src={company.logo}
-                  alt=""
-                  fill
-                  sizes="(min-width: 1152px) 208px, (min-width: 1024px) 20vw, (min-width: 640px) 28vw, 40vw"
-                  className="h-full w-full object-contain"
-                  style={{ transform: `scale(${company.logoScale ?? 1})` }}
-                />
+                  <Image
+                    src={company.logo}
+                    alt=""
+                    fill
+                    sizes="(min-width: 1152px) 208px, (min-width: 1024px) 20vw, (min-width: 640px) 28vw, 40vw"
+                    className="h-full w-full object-contain"
+                    style={{ transform: `scale(${company.logoScale ?? 1})` }}
+                  />
                 </div>
               </div>
-              <span className="text-sm font-medium text-muted-foreground">
-                {company.name}
-              </span>
+              <span className="text-sm font-medium text-muted-foreground">{company.name}</span>
             </li>
           ))}
         </ul>
