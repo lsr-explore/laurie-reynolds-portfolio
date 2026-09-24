@@ -1,24 +1,27 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Development
 
-First, run the development server:
+Requires Node 24 (`.nvmrc`) and pnpm via Corepack (`corepack enable`; version pinned in `package.json`).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev          # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Script | What it does |
+| --- | --- |
+| `pnpm format` | Format and apply safe fixes with Biome (also runs on save in VS Code) |
+| `pnpm format:check` | Check formatting without writing |
+| `pnpm lint` | ESLint, including `jsx-a11y` recommended rules as errors |
+| `pnpm typecheck` | `tsc --noEmit` |
+| `pnpm e2e` | Build, start, and run the axe WCAG 2.2 AA scan on every route (Playwright) |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A Husky pre-commit hook runs `format:check`, `lint`, and `typecheck`. CI runs those plus the
+axe scan on every PR and push to `main`. Dependabot opens grouped weekly updates for npm packages
+and GitHub Actions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run `pnpm exec playwright install chromium` once before the first `pnpm e2e`.
 
 ## Learn More
 
