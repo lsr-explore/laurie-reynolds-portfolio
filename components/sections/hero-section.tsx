@@ -42,7 +42,7 @@ export function HeroSection() {
         </div>
 
         {/* Hero image */}
-        <div className="flex-1">
+        <div className="flex-col">
           <Image
             src="/pexels-hudson-mcdonald-692563691-28209792.jpg"
             alt="People walking along a sandy beach at sunset with waves and mountains in the background"
@@ -51,6 +51,9 @@ export function HeroSection() {
             priority
             className="rounded-lg object-cover"
           />
+          <p className="text-right">
+            Photo by <a className="underline" href="https://www.pexels.com/photo/aerial-view-of-people-at-the-beach-28209792/" target="_blank">Hudson McDonald</a> from Pexels
+          </p>
         </div>
       </div>
     </section>

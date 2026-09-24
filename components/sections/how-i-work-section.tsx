@@ -78,28 +78,47 @@ function CardIcon({ icon }: { icon: string }) {
           <path d="M21 12a9 9 0 0 1-15 6.7L3 16" />
         </svg>
       );
+    case "workflow":
+      return (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className={iconClass}
+          aria-hidden="true"
+        >
+          <rect x="3" y="3" width="6" height="5" rx="1" />
+          <rect x="15" y="3" width="6" height="5" rx="1" />
+          <rect x="9" y="16" width="6" height="5" rx="1" />
+          <path d="M6 8v3h12V8" />
+          <path d="M12 11v5" />
+        </svg>
+      );
     default:
       return null;
   }
 }
 
-export function HowIThinkSection() {
+export function HowIWorkSection() {
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-10">
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="font-sans text-3xl font-light md:text-4xl">
             How I Work
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Principles shaped by decades of building across regulated
-            environments, high-traffic systems, and cross-functional teams.
+            A few principles that have shaped how I build software and work with teams.
           </p>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {howIThinkCards.map((card) => (
-            <Card key={card.title} className="border-t-4 border-t-accent transition-shadow hover:shadow-md">
+        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-6">
+          {howIThinkCards.map((card, index) => (
+            <Card key={card.title} className={["border-t-4 border-t-accent transition-shadow hover:shadow-md", "lg:col-span-2", index === 3 ? "lg:col-start-2" : "",].join(" ")}>
               <CardHeader>
                 <CardIcon icon={card.icon} />
                 <CardTitle className="text-base">{card.title}</CardTitle>

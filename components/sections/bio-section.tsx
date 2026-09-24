@@ -31,7 +31,7 @@ export function BioSection() {
           </p>
           <p>
             At Thermo Fisher, I led development of laboratory applications used 
-            in regulated scientific workflows.  At Siements, I built imaging and
+            in regulated scientific workflows.  At Siemens, I built imaging and
             visualization software for the Sequoia ultrasound platform.  These roles 
             taught me how much thoughtful interface design matters when users are 
             working with complex information.
@@ -45,9 +45,9 @@ export function BioSection() {
             testing practices, and helping teams understand the complete customer journey.
           </p>
           <p>
-            The common thread in my work is that I enjoy making complicated 
-            systems easier for people to use and easier for engineering teams 
-            to maintain.
+            Across these roles, I've brought hands-on frontend engineering,
+            systems thinking, and a practical approach to making complex software
+            easier for people to use and teams to maintain.
           </p>
         
         </div>

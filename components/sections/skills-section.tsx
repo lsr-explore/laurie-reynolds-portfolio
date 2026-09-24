@@ -15,13 +15,15 @@ export function SkillsSection() {
               <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                 {category.label}
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <ul className="flex flex-row space-x-4">
                 {category.skills.map((skill) => (
-                  <Badge key={skill} variant="secondary">
-                    {skill}
-                  </Badge>
+                  <li key={skill}>
+                    <Badge key={skill} variant="secondary">
+                      {skill}
+                    </Badge>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>

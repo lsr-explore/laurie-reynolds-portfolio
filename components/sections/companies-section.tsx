@@ -3,8 +3,8 @@ import { companies } from "@/lib/data";
 
 export function CompaniesSection() {
   return (
-    <section className="py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="py-5">
+      <div className="mx-auto max-w-3xl px-6">
         <Separator className="mb-12" />
         <h2 className="text-center font-sans text-3xl font-light md:text-4xl">
           Organizations I&apos;ve Worked With
