@@ -31,8 +31,8 @@ export default function AccessibilityPage() {
             skip-to-content link, and automated accessibility checks. I have also tested the site
             with screen readers, and screen-reader use is an intended, supported way to access its
             content. Testing does not cover every combination of browser, device, and assistive
-            technology, so I cannot guarantee compatibility in every setup. This statement is not
-            a claim of full WCAG conformance.
+            technology, so I cannot guarantee compatibility in every setup. This statement is not a
+            claim of full WCAG conformance.
           </p>
           <p className="mt-3">
             Downloadable PDFs and third-party websites may not offer the same accessibility as the
