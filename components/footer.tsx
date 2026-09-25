@@ -1,10 +1,35 @@
+import Link from 'next/link';
+
 export function Footer() {
   return (
     <footer className="border-t border-border py-8">
-      <div className="mx-auto max-w-6xl px-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+      <div className="mx-auto max-w-6xl px-6 flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap sm:justify-between">
         <p className="text-sm text-muted-foreground">
           &copy; {new Date().getFullYear()} Laurie Reynolds. All rights reserved.
         </p>
+        <nav
+          aria-label="Footer navigation"
+          className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm"
+        >
+          <Link
+            href="/accessibility"
+            className="text-muted-foreground underline underline-offset-4 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4"
+          >
+            Accessibility
+          </Link>
+          <Link
+            href="/privacy"
+            className="text-muted-foreground underline underline-offset-4 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4"
+          >
+            Privacy
+          </Link>
+          <Link
+            href="/sitemap"
+            className="text-muted-foreground underline underline-offset-4 hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4"
+          >
+            Sitemap
+          </Link>
+        </nav>
         <a
           href="https://www.linkedin.com/in/lauriesreynolds/"
           target="_blank"

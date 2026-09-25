@@ -1,0 +1,30 @@
+# Allow ordinary crawlers to see our X-Robots-Tag: noindex header.
+# Crawling permission does not override noindex.
+User-agent: *
+Allow: /
+
+# OpenAI: model training and ChatGPT search
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Anthropic: model training, search, and user-directed retrieval
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+Disallow: /
+
+# Opt out of Google's specified Gemini training and grounding uses.
+# This does not block ordinary Google Search crawling.
+User-agent: Google-Extended
+Disallow: /
+
+# Perplexity search crawler
+User-agent: PerplexityBot
+Disallow: /
+
+# Common Crawl's publicly available web dataset
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://laurie-reynolds-portfolio.vercel.app/sitemap.xml

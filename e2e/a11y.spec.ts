@@ -9,6 +9,8 @@ const routes = [
   '/',
   '/about',
   '/resume',
+  '/accessibility',
+  '/privacy',
   ...publishedStories.map((story) => `/work/${story.slug}`),
 ];
 
