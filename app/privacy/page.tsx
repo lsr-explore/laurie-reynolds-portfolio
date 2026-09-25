@@ -37,6 +37,15 @@ export default function PrivacyPage() {
             for details.
           </p>
         </section>
+        <section aria-labelledby="appearance">
+          <h2 id="appearance">Appearance preference</h2>
+          <p>
+            If you choose a light, dark, or system theme, this site saves that preference in your
+            browser’s local storage so it can remember your choice on future visits. This preference
+            is not sent to me or used for analytics. You can reset it by clearing this site’s stored
+            data in your browser.
+          </p>
+        </section>
         <section aria-labelledby="hosting">
           <h2 id="hosting">Hosting and access protection</h2>
           <p>

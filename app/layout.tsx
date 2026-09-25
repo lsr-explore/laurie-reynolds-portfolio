@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { SkipLink } from '@/components/skip-link';
+import { ThemeProvider } from '@/components/theme-provider';
 import './globals.css';
 
 const geistSans = Geist({
@@ -44,21 +45,24 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <div
-          className="h-1 bg-gradient-to-r from-primary via-accent to-primary"
-          aria-hidden="true"
-        />
-        <SkipLink />
-        <Header />
-        <main id="main-content" className="flex-1">
-          {children}
-        </main>
-        <Footer />
-        <Analytics debug={false} />
+        <ThemeProvider>
+          <div
+            className="h-1 bg-gradient-to-r from-primary via-accent to-primary"
+            aria-hidden="true"
+          />
+          <SkipLink />
+          <Header />
+          <main id="main-content" className="flex-1">
+            {children}
+          </main>
+          <Footer />
+          <Analytics debug={false} />
+        </ThemeProvider>
       </body>
     </html>
   );

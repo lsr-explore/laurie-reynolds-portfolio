@@ -27,7 +27,7 @@ export function SkillsSection() {
                           alt=""
                           width={20}
                           height={20}
-                          className="size-5 shrink-0 object-contain"
+                          className="size-5 shrink-0 object-contain dark:rounded-sm dark:bg-white dark:p-0.5"
                         />
                       ) : null}
                       {skill}

@@ -9,7 +9,7 @@ const linkClass = 'text-sm font-medium text-foreground transition-colors hover:t
 export function DesktopNav({ stories }: { stories: StoryLink[] }) {
   return (
     <NavigationMenu.Root aria-label="Main navigation" className="hidden md:block">
-      <NavigationMenu.List className="flex items-center gap-8">
+      <NavigationMenu.List className="flex items-center gap-6">
         <NavigationMenu.Item>
           <NavigationMenu.Trigger className={`${linkClass} group inline-flex items-center gap-1`}>
             Work
